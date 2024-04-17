@@ -1,0 +1,40 @@
+
+<div class="accout__container">
+	<div class="login__account">
+		<div class="login__container">
+			<h2 class="login__title">Ласкаво Просимо!</h2>
+			<form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+				<div class="form__group form-group__one">
+					<label  for="email">Email:</label>
+					<input formControlName="email" class="form-user__input" placeholder="Email" type="text" id="email">
+          <p *ngIf="this.loginForm.get('email')?.invalid && this.loginForm.get('email')?.touched "><small class="text-danger">Email is reqiered</small></p>
+				</div>
+				<div class="form__group form-group__two">
+				<label  for="password">Password:</label>
+				<input formControlName="password" class="form-user__input" placeholder="Password" type="password" id="userpassword">
+          <p *ngIf="this.loginForm.get('password')?.invalid && this.loginForm.get('password')?.touched "><small class="text-danger">Password is required (min. length = 8)</small></p>
+			</div>
+			<button  [disabled]="loginForm.invalid" class="login__button" type="submit">Password</button>
+			</form>
+		</div>
+		<div class="login__info">
+			<div class="info__title">
+				<h3>Реєструйтеся та Отримуйте:</h3>
+			</div>
+				<p class="info__text">Промокоди зі знижкою від 20% до 30%</p>
+				<p class="info__text">Звязок з нашими менеджерами</p>
+				<p class="info__text">Багато цікавих бонусів</p>
+			</div>
+	</div>
+	<div class="account-image">
+		<div class="account-image__one">
+			<img src="../../../../assets/img/icon/Logo (1).svg" alt="">
+		</div>
+		<div class="account-image__two">
+			<img src="../../../../assets/img/about-us/image 12.svg" alt="">
+		</div>
+		<div class="account-image__three">
+			<img src="../../../../assets/img/about-us/image 27.svg" alt="">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+<header class="header">
+<div class="header__container">
+	<img routerLink="/app" class="header__icon" src="../../../assets/img/icon/Logo (1).svg" alt="">
+	<div class="header__menu">
+		<nav class="header__list">
+			<ul class="header__items">
+				<li class="header__item">
+					<a routerLink="/about-us" class="header-about-us">Акції</a>
+				</li>
+				<li class="header__item">
+					<div class="header__content">
+						<a  class="header-about-us">Гаряче</a>
+						<span class="header-about-us__icon"  (click)="toggleHotDish()" >
+							<img src="../../../assets/img/icon/Vector (4).svg" alt="">
+						</span>
+					</div>
+					<nav class="header-product__list" *ngIf="hotDisher">
+						<ul class="header-product__items">
+							<li class="header-product__item">
+							<a routerLink="/hotDish">Гарячі страви</a>
+							</li>
+							<li class="header-product__item">
+								<a routerLink="/soups">Супи</a>
+							</li>
+							<li class="header-product__item">
+								<a routerLink="/khinkali">Хінкалі та Хачапурі</a>
+							</li>
+						</ul>
+					</nav>
+				</li>
+				<li class="header__item">
+					<div class="header__content">
+					<a class="header-about-us">Холодне</a>
+					<span class="header-about-us__icon" (click)="toggleColdDish()" >
+						<img src="../../../assets/img/icon/Vector (4).svg" alt="">
+					</span>
+				</div>
+				<nav class="header-product__list" *ngIf="coldDisher" >
+					<ul class="header-product__items">
+						<li class="header-product__item">
+							<a routerLink="/coldDish">Холодні страви</a>
+						</li>
+						<li class="header-product__item">
+							<a routerLink="/salads">Салати</a>
+						</li>
+						<li class="header-product__item">
+							<a routerLink="/snack">Закуска</a>
+						</li>
+					</ul>
+				</nav>
+				
+			</li>
+				<li class="header__item">
+					<a routerLink="/freshBakedGoods" class="header-about-us">Свіжа випічка</a>
+				</li>
+				<li class="header__item">
+					<a routerLink="/desserts" class="header-about-us">Десерти</a>
+				</li>
+				<li class="header__item">
+					<a routerLink="/drinks" class="header-about-us">Напитки</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+<div class="header__icon">
+  <a routerLink="/basket" class="header__basket"><img src="../../../assets/img/icon/Vector (6).svg" alt=""></a>
+  <a routerLink="/account" class="header__account"><img src="../../../assets/img/icon/Vector (7).svg" alt=""></a>
+</div>
+</div>
+</header>

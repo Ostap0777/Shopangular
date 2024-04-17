@@ -1,0 +1,91 @@
+.feetback {
+
+	&__container {
+		margin-top: 70px;
+		position: relative;
+	}
+
+	&__title {
+		font-size: 70px;
+		color: #fff;
+	}
+
+	&__content {
+		display: flex;
+		padding-top: 100px;
+	}
+
+	&__info {
+		flex: 0 1 40%;
+	}
+
+	&__image {
+		display: flex;
+		flex: 0 1 60%;
+
+	}
+}
+.form {
+
+	&__group {
+	}
+}
+.form-group {
+
+	&__one {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__two {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+.user {
+
+	&__label {
+	font-size: 20px;
+	color:#9EA2AA;
+	letter-spacing: 1px;
+	}
+
+	&__input {
+		width: 450px;
+		height: 150px	;
+			border: 2px solid #9EA2AA;
+		border-radius: 5px;
+	}
+}
+.email {
+
+	&__label {
+		font-size: 20px;
+	color:#9EA2AA;
+	letter-spacing: 1px;
+	}
+
+	&__input {
+		height: 40px;
+		width: 350px;
+		border: 2px solid #9EA2AA;
+		border-radius: 5px;
+	}
+}
+.image {
+
+	&__one {
+     position: absolute;
+	  bottom: -250px;
+	}
+
+	&__two {
+		position: absolute;
+      right: -50px;
+		top: 0px;
+	}
+}

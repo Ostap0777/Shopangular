@@ -1,0 +1,16 @@
+<div class="product__container">
+  <div class="products__title">Популярні страви</div>
+  <div class="product__items"  >
+    <div class="item__product"  *ngFor="let product of products">
+		<img class="product__image" src="{{product.image}}" alt="">
+      <a href="#" class="product__name">{{product.name}}</a>
+      <p class="product__weight">{{product.weight}}</p>
+      <a href="#" class="product__opus">{{product.opus}}</a>
+      <div class="product__additional">
+        <p class="product__price">{{product.price}} грн</p>
+        <a href="#" class="product-add__basket"><img src="../../../assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+

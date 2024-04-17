@@ -1,0 +1,117 @@
+
+
+.header {
+	background-image: linear-gradient(357deg, rgba(168, 105, 74, 0.15) 0%,rgba(49, 77, 202, 0.15) 100%),linear-gradient(447deg, rgb(88, 1, 221),rgb(0,0,0));
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		gap: 20px;
+		height: 60px;
+	}
+
+	&__content {
+	
+		
+	}
+	&__icon {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+	}
+  
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list:hover {
+		
+	}
+
+	&__items {
+		display: flex;
+	}
+   &__item {
+
+   }
+	&__item:hover {
+	opacity: 0.7;
+	}
+	&__poshuk {
+	}
+	&__poshuk:hover {
+		opacity: 0.7;
+	}
+
+	&__basket {
+		color: #fff;
+		font-size: 24px;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+	&__basket:hover {
+		opacity: 0.6;
+	
+	}
+
+
+	&__account {
+		color: #fff;
+		font-size: 24px;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+	&__account:hover {
+		opacity: 0.6;
+	}
+}
+.header-about-us {
+	color: #fff;
+	font-size: 24px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.header-about-us {
+
+	&__icon img {
+     align-self: center;
+	  
+	  margin-top: 5px;
+	}
+}
+
+.header-product {
+
+	&__list {
+		position: absolute;
+		top: 55px;
+	}
+}
+.header-product {
+
+	&__items {
+	   display: flex;
+		flex-direction: column;
+		gap: 5px;
+		background-color: rgb(74, 68, 107);
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	&__item {
+		font-size: 17px;
+		line-height: 20px;
+		color: #fff;
+		margin-bottom: 5px;
+	}
+	&__item:hover {
+		text-decoration: underline;
+	}
+}
+

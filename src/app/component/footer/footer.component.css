@@ -1,0 +1,96 @@
+.footer {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+}
+
+.footer-left__one {
+  display: flex;
+  gap: 50px;
+  height: 100px;
+}
+
+.footer__one {
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid white;
+}
+
+.footer__communication {
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  color: #FFFFFF;
+}
+
+.footer__phone:hover {
+  text-decoration: underline;
+}
+
+.footer__delivery:hover {
+  text-decoration: underline;
+}
+
+.footer__pay:hover {
+  text-decoration: underline;
+}
+
+.footer__contact:hover {
+  text-decoration: underline;
+}
+
+.footer-right__one {
+  display: flex;
+  color: #FFFFFF;
+  gap: 50px;
+  height: 100px;
+  align-items: center;
+}
+
+.footer__number {
+  align-self: center;
+  display: block;
+  font-size: 20px;
+}
+
+.footer__email {
+  font-size: 12px;
+  display: block;
+}
+
+.footer-info__icon {
+  align-self: center;
+}
+
+.footer__two {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.footer-two__info {
+  display: block;
+}
+
+.footer-two__rigth {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-two__info {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.footer-two__info:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+<div class="hot-dist__container">
+	<h1 class="hot-dist__title">Гарячі страви</h1>
+	<div class="hot-dist__sort sort">
+		<div class="sort__title">Сотрувати:</div>
+		<nav class="sort__list">
+			<ul class="list__items">
+				<li (click)="onSortingChange('default')" class="list__item">За замовчуванням</li>
+				<li (click)="onSortingChange('ascending')" class="list__item">Ціна за зростанням</li>
+				<li (click)="onSortingChange('descending')" class="list__item">Ціна за спаданням</li>
+		  </ul>
+		</nav>
+	</div>
+	<div class="product__container">
+		<div class="product__items">
+		<div class="product__item product" *ngFor="let product of hotProducts">
+			<img class="product__image" src="{{product.image}}" alt="">
+			<a class="product__name" href="#">{{product.name}}</a>
+			<p class="product__weight">{{product.weight}}</p>
+			<p class="product__opus">{{product.opus}}</p>
+			<div class="product__additional">
+				<p class="product__price">{{product.price}} грн</p>
+				<a href="#" class="product-add__basket"><img src="../../../assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
+			 </div>
+		</div>
+	</div>
+	</div>
+</div>
