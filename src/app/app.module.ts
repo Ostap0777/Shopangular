@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './component/products/products.component';
@@ -24,11 +24,11 @@ import { KhinkaliComponent } from './component/khinkali/khinkali.component';
 import { DeliveryComponent } from './component/footer/delivery/delivery.component';
 import { PaymentComponent } from './component/footer/payment/payment.component';
 import { ContactComponent } from './component/footer/contact/contact.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
-
+import { LoginInterceptor } from './interceptor/login.interceptor';
 
 @NgModule({
   declarations: [
@@ -54,17 +54,19 @@ import { FooterComponent } from './component/footer/footer.component';
     DeliveryComponent,
     PaymentComponent,
     ContactComponent,
-	 HeaderComponent,
-	 FooterComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-	 FormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true } 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

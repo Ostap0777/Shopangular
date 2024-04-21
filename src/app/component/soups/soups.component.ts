@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { soupsProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
+import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
 
 @Component({
   selector: 'app-soups',
@@ -9,17 +10,36 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./soups.component.scss']
 })
 export class SoupsComponent implements OnInit, OnDestroy {
-  soupsProduct: soupsProducts[];
-  soupsSubcription: Subscription;
+  products: soupsProducts[];
+  productSubcription: Subscription;
+  sortedProducts: any[] = [];
+  sortingType:string = 'default';
+  isListOpen: boolean = false;
+ 
+  constructor(private soupsServices: ProductService, private sortService: SortProductsService){}
 
-  constructor(private soupsServices: ProductService){}
+
+  toggleList() {
+	this.isListOpen = !this.isListOpen
+  }
+
 
   ngOnInit(): void {
 	this.soupsServices.getSoupsProducts().subscribe((data:any) => {
-		this.soupsProduct = data.products
+		this.products= data.products
+		this.sortSoupsProducts()
 	})
   }
   ngOnDestroy(): void {
-	if(this.soupsSubcription) this.soupsSubcription.unsubscribe()
+	this.productSubcription.unsubscribe();
+  }
+
+  sortSoupsProducts() {
+	this.sortedProducts = this.sortService.sortSoupsProducts(this.products, this.sortingType)
+  }
+
+  onSortingChange(sortingType: string) {
+	this.sortingType = sortingType;
+	this.sortSoupsProducts()
   }
 }

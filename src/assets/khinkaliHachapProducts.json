@@ -1,12 +1,13 @@
 {
-	"products" : [
+	"products": [
 		{
 			"id": 1,
 			"name": "Хінкалі жарені(6шт)",
 			"opus": "Пряні хінкалі з начинкой з ароматом баранини зі спеціями.",
 			"image":"../../../assets/img/menu/menu-product/Mask Group (3).svg",
 			"price": 180,
-			"weight": 350
+			"weight": 350,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 2,
@@ -14,7 +15,8 @@
 			"opus": "Пряні хінкалі з начинкою з ароматом баранини зі спеціями",
 			"image":"../../../assets/img/menu/menu-product/Mask Group (2).svg",
 			"price": 180,
-			"weight": 350
+			"weight": 350,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 3,
@@ -22,31 +24,35 @@
 			"opus": "Хачапурі \"Човник\" з начинкою з розплавленого сиру сулугуні, яйця та олії.",
 			  "image":"../../../assets/img/menu/menu-product/Mask Group (1).svg",
 			"price": 170,
-			"weight": 430
+			"weight": 320,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 4,
 			"name": "Глибокосмажений худий, хінкалі з м'ясом",
 			"opus": "Витончена та смачна страва, що відзначається своєю ароматною та смачною начинкою з ніжного м'яса.",
 			  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap2.jpg",
-			"price": 170,
-			"weight": 430
+			"price": 180,
+			"weight": 230,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 4,
 			"name": "Смачний хінкалі з цилантро на тарілці на білому тлі",
 			"opus": "Вишукана та апетитна страва, яка вражає своєю ароматною та смачною начинкою з ніжного м'яса.",
 			  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap3.jpg",
-			"price": 170,
-			"weight": 430
+			"price": 175,
+			"weight": 210,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 5,
 			"name": "Хінкалі з м'яса і спеціями з гострим вершковим соусом",
 			"opus": "Ніжне тісто, випічене до золотистості, обгорнуте смачною начинкою з ароматним м'ясом і вишуканими спеціями.",
 			  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap4.jpg",
-			"price": 170,
-			"weight": 430
+			"price": 240,
+			"weight": 240,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 6,
@@ -54,16 +60,19 @@
 			"opus": " витончена грузинська страва, що складається з тонкого шматочка тіста, яке містить смачну начинку зі смаженого м'яса",
 			  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap5.jpg",
 			"price": 170,
-			"weight": 430
+			"weight": 260,
+			"category": "khinkaliHachap"
 		 },
 		 {
 			"id": 7,
 			"name": "Хінкалі з сиром",
 			"opus": "Він має аналогічну начинку, як і класичний хінкаль, але замість м'яса використовується сир.",
 			  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap6.jpg",
-			"price": 170,
-			"weight": 430
+			"price": 180,
+			"weight": 230,
+			"category": "khinkaliHachap"
 		 }
-
+	
 	]
+
 }

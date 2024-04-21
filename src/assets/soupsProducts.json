@@ -1,20 +1,22 @@
 {
-	"products" : [
+	"products": [
 		{
 			"id": 1,
 			"name": "Курячий суп з рисом та овочами",
 			"opus": "Курячий бульйон, наварений зі смачних курячих крилець або грудки.",
 			  "image":"../../../assets/img/soups/soup1.jpg",
 			"price": 240,
-			"weight": 230
+			"weight": 230,
+			"category": "soups"
 		 },
-		 	{
+			 {
 			"id": 2,
 			"name": "Морквяний суп",
 			"opus": "Ніжний, ароматний і надзвичайно смачний варіант для теплої та здорової страви. ",
 			  "image":"../../../assets/img/soups/soup2.jpg",
 			"price": 200,
-			"weight": 210
+			"weight": 210,
+			"category": "soups"
 		 },
 		 {
 			"id": 3,
@@ -22,7 +24,8 @@
 			"opus": "Класичне французьке овочеве рагу, що вражає яскравим смаком та ароматом свіжих овочів.",
 			  "image":"../../../assets/img/soups/soup3.jpg",
 			"price": 180,
-			"weight": 200
+			"weight": 200,
+			"category": "soups"
 		 },
 		 {
 			"id": 4,
@@ -30,7 +33,8 @@
 			"opus": "Здорова і смачна страва, що вражає своєю простотою та насиченим смаком.",
 			  "image":"../../../assets/img/soups/soup4.jpg",
 			"price": 160,
-			"weight": 245
+			"weight": 245,
+			"category": "soups"
 		 },
 		 {
 			"id": 5,
@@ -38,7 +42,8 @@
 			"opus": "це смак відтінків осені в кожному ковтку. Готується зі свіжої капусти, моркви, картоплі та інших овочів.",
 			  "image":"../../../assets/img/soups/soup5.jpg",
 			"price": 170,
-			"weight": 215
+			"weight": 215,
+			"category": "soups"
 		 },
 		 {
 			"id": 6,
@@ -46,7 +51,8 @@
 			"opus": " витончена та смаковита страва, яка поєднує в собі багатий смак гарбуза з ароматом свіжої петрушки. ",
 			  "image":"../../../assets/img/soups/soup6.jpg",
 			"price": 175,
-			"weight": 225
+			"weight": 225,
+			"category": "soups"
 		 },
 		 {
 			"id": 7,
@@ -54,7 +60,8 @@
 			"opus": " Ця страва вражає своєю яскравістю, ароматом та смаком.",
 			  "image":"../../../assets/img/soups/soup7.jpg",
 			"price": 220,
-			"weight": 255
+			"weight": 255,
+			"category": "soups"
 		 },
 		 {
 			"id": 8,
@@ -62,7 +69,8 @@
 			"opus": "Це ароматний, добре прокип'ячений відвар.",
 			  "image":"../../../assets/img/soups/soup8.jpg",
 			"price": 180,
-			"weight": 225
+			"weight": 225,
+			"category": "soups"
 		 },
 		 {
 			"id": 9,
@@ -70,7 +78,8 @@
 			"opus": "Цей суп має ніжний, кремовий відтінок та багатий смак.",
 			  "image":"../../../assets/img/soups/soup9.jpg",
 			"price": 220,
-			"weight": 255
+			"weight": 255,
+			"category": "soups"
 		 },
 		 {
 			"id": 10,
@@ -78,23 +87,26 @@
 			"opus": "Цей суп може бути поданий як гарячим, так і холодним.",
 			  "image":"../../../assets/img/soups/soup10.jpg",
 			"price": 195,
-			"weight": 235
+			"weight": 235,
+			"category": "soups"
 		 },
-	    {
+		 {
 		"id":11,
 		"name": "Червоний сочевичний суп з лимонним",
 		"opus": " Цей суп має виразний червоний колір та багатий аромат.",
 		  "image":"../../../assets/img/soups/soup11.jpg",
 		"price": 160,
-		"weight": 185
-	 },
-    {
-	"id":12,
-	"name": "Домашній пивний сирний суп",
-	"opus": " Цей суп має кремову консистенцію та багатий смак.",
-	  "image":"../../../assets/img/soups/soup12.jpg",
-	"price": 185,
-	"weight": 225
- }
+		"weight": 185,
+		"category": "soups"
+		},
+		{
+		"id":12,
+		"name": "Домашній пивний сирний суп", 
+		"opus": " Цей суп має кремову консистенцію та багатий смак.",
+		"image":"../../../assets/img/soups/soup12.jpg",
+		"price": 185,
+		"weight": 225,		
+		"category": "soups"
+	}
 	]
 }

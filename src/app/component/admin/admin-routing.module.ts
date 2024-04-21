@@ -10,7 +10,7 @@ import { myGuard1Guard } from './guards/my-guard-1.guard';
 
 const routes: Routes = [
 	{path:'',component:AdminDashboardComponent},
-	{path:'product',component:ProductsListComponent},
+	{path:'productlist',component:ProductsListComponent},
 	{path:'products/product/:id',component: ProductDetailsComponent},
 	{path:'home',component:HomeComponent},
 	{path: '',redirectTo:'home', pathMatch: 'full'}

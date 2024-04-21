@@ -1,1 +1,85 @@
-<p>products-list works!</p>
+  <app-admin-header></app-admin-header>
+
+<div class="products-list__container">
+	<h1 class="products-list__title">Гарячі страви</h1>
+	<div class="product__container">
+		<div class="product__items"  >
+		<div class="product__item product" *ngFor="let product of hotProducts">
+			<img class="product__image" src="{{product.image}}" alt="">
+			<a class="product__name" href="#">{{product.name}}</a>
+			<p class="product__weight">{{product.price}} г</p>
+			<p class="product__opus">{{product.opus}}</p>
+			<div class="product__additional">
+				<p class="product__price">{{product.price}} грн</p>
+				<a href="#" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+			 </div>
+		</div>
+	</div>
+ </div>
+
+ <h1 class="products-list__title">Холодні страви</h1>
+	<div class="product__container">
+		<div class="product__items"  >
+		<div class="product__item product" *ngFor="let product of coldProducts">
+			<img class="product__image" src="{{product.image}}" alt="">
+			<a class="product__name" href="#">{{product.name}}</a>
+			<p class="product__weight">{{product.price}} г</p>
+			<p class="product__opus">{{product.opus}}</p>
+			<div class="product__additional">
+				<p class="product__price">{{product.price}} грн</p>
+				<a href="#" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+			 </div>
+		</div>
+	</div>
+ </div>
+
+
+ <h1 class="products-list__title">Десерти</h1>
+	<div class="product__container">
+		<div class="product__items"  >
+		<div class="product__item product" *ngFor="let product of desertsProducts">
+			<img class="product__image" src="{{product.image}}" alt="">
+			<a class="product__name" href="#">{{product.name}}</a>
+			<p class="product__weight">{{product.price}} г</p>
+			<p class="product__opus">{{product.opus}}</p>
+			<div class="product__additional">
+				<p class="product__price">{{product.price}} грн</p>
+				<a href="#" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+			 </div>
+		</div>
+	</div>
+ </div>
+
+
+ <h1 class="products-list__title">Напитки</h1>
+	<div class="product__container">
+		<div class="product__items"  >
+		<div class="product__item product" *ngFor="let product of drinksProducts">
+			<img class="product__image" src="{{product.image}}" alt="">
+			<a class="product__name" href="#">{{product.name}}</a>
+			<p class="product__weight">{{product.price}} г</p>
+			<p class="product__opus">{{product.opus}}</p>
+			<div class="product__additional">
+				<p class="product__price">{{product.price}} грн</p>
+				<a href="#" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+			 </div>
+		</div>
+	</div>
+ </div>
+
+ <h1 class="products-list__title">Свіжа Випічка</h1>
+ <div class="product__container">
+	 <div class="product__items"  >
+	 <div class="product__item product" *ngFor="let product of bakesGoodsProducts">
+		 <img class="product__image" src="{{product.image}}" alt="">
+		 <a class="product__name" href="#">{{product.name}}</a>
+		 <p class="product__weight">{{product.price}} г</p>
+		 <p class="product__opus">{{product.opus}}</p>
+		 <div class="product__additional">
+			 <p class="product__price">{{product.price}} грн</p>
+			 <a href="#" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+		  </div>
+	 </div>
+ </div>
+</div>
+</div>

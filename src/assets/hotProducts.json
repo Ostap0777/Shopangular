@@ -6,7 +6,8 @@
 			"opus":"За сімейним рецептом: найніжніше рубане м'ясо з екологічно чистими фермами.",
 			"image":"../../../assets/img/hotDish/Mask Group (13).svg",
 			"weight":350,
-			"price":210
+			"price":210,
+			"category": "hot"
 		},
 		{
 			"id": 2,
@@ -14,7 +15,8 @@
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
 			"image":"../../../assets/img/hotDish/Mask Group (14).svg",
 			"weight":430,
-			"price":215
+			"price":215,
+			"category": "hot"
 		},
 		{
 			"id": 3,
@@ -22,7 +24,8 @@
 			"opus":"Неймовірно ароматна начинка з рубаного м'яса та свіжої зелені, загорнута у виноградне листя.",
 			"image":"../../../assets/img/hotDish/Mask Group (15).svg",
 			"weight":350,
-			"price":225
+			"price":225,
+			"category": "hot"
 		},
 		{
 			"id": 4,
@@ -30,7 +33,8 @@
 			"opus":"Неймовірно ароматна начинка з рубаного м'яса та свіжої зелені, загорнута у виноградне листя.",
 			"image":"../../../assets/img/hotDish/Mask Group (16).svg",
 			"weight":350,
-			"price":235
+			"price":235,
+			"category": "hot"
 		},
 		{
 			"id": 5,
@@ -38,14 +42,16 @@
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
 			"image":"../../../assets/img/hotDish/Mask Group (17).svg",
 			"weight":430,
-			"price":205
+			"price":205,
+			"category": "hot"
 		},	{
 			"id": 6,
 			"name":"Стейк з лосося з овочами",
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
 			"image":"../../../assets/img/hotDish/Mask Group (18).svg",
 			"weight":430,
-			"price":640
+			"price":640,
+			"category": "hot"
 		}
 	]
 }

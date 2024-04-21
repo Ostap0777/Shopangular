@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { khinkaliHachapProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
+import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
 
 @Component({
   selector: 'app-khinkali',
@@ -10,18 +11,36 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class KhinkaliComponent implements OnInit, OnDestroy {
   
-	khinkaliHachapProducts : khinkaliHachapProducts[];
-	khinkaliHachapSubcription : Subscription;
+	products : khinkaliHachapProducts[];
+	productSubcription : Subscription;
+	sortedProducts:any[] = [];
+	sortingType: string = 'default';
+	isListOpen: boolean = false;
 
 
-constructor(private khinkaliHachapServices : ProductService) {}
+constructor(private khinkaliHachapServices : ProductService, private sortService: SortProductsService) {}
+
+
+toggleList() {
+	this.isListOpen = !this.isListOpen
+}
 
 ngOnInit(): void {
 	this.khinkaliHachapServices.getKhinkaliHachapProducts().subscribe((data:any) => {
-		this.khinkaliHachapProducts = data.products
+		this.products = data.products
+		this.sortKhinkaliHachapProducts()
 	})
 }
 ngOnDestroy(): void {
-	 if(this.khinkaliHachapSubcription) this.khinkaliHachapSubcription.unsubscribe()
+	this.productSubcription.unsubscribe();
+}
+
+sortKhinkaliHachapProducts() {
+  this.sortedProducts = this.sortService.sortKhinkaliHachapProducts(this.products, this.sortingType)
+}
+
+onSortingChange(sortingType: string) {
+this.sortingType = sortingType;
+this.sortKhinkaliHachapProducts()
 }
 }

@@ -1,0 +1,94 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Тірамісу",
+			"opus": "Готують його на основі сиру маскарпоне та печива савоярді з кавовим просоченням, щедро посипаючи какао.",
+			  "image":"../../../assets/img/desserts/tiramisu.jpg",
+			"price": 240,
+			"weight": 240,
+			"category": "desert"
+		 },
+		 {
+			"id": 2,
+			"name": "Крем-брюле",
+			"opus": "Ось і крем-брюле із заварного крему, з запеченою карамельною скоринкою, мало кого залишить байдужим.",
+			  "image":"../../../assets/img/desserts/almond-cookies.jpg",
+			"price": 225,
+			"weight": 210,		
+			"category": "desert"
+		 },
+		 {
+			"id": 3,
+			"name": "Віденський струдель",
+			"opus": "Подають цей десерт з морозивом та щедро посипають цукровою пудрою, можуть ще прикрасити м’ятою. ",
+			  "image":"../../../assets/img/desserts/strudel.jpg",
+			"price": 320,
+			"weight": 250,
+			"category": "desert"
+		 },
+		 {
+			"id": 4,
+			"name": "Мигдальне печиво ",
+			"opus": ". Мигдальне печиво набагато смачніше, а якщо ви будете запивати його молоком, то кращого сніданку не знайти.",
+			  "image":"../../../assets/img/desserts/almond-cookies.jpg",
+			"price": 140,
+			"weight": 240,
+			"category": "desert"
+		 },
+		 {
+			"id": 5,
+			"name": "Макаронс",
+			"opus": ". Мало калорій, привабливий зовнішній вигляд, ніжний крем на будь-який смак та невагомість – усе це макаронс! .",
+			  "image":"../../../assets/img/desserts/macarons.jpg",
+			"price": 320,
+			"weight": 320,
+			"category": "desert"
+		 },
+		 {
+			"id": 6,
+			"name": "Пахлава",
+			"opus": "Сироп готують з меду, цукру, лимонного соку та апельсинової цедри. Прикрашають горіхами та фісташками.  ",
+			  "image":"../../../assets/img/desserts/baklava.jpg",
+			"price": 430,
+			"weight": 200,
+			"category": "desert"
+		 },
+		 {
+			"id": 7,
+			"name": "Чурос",
+			"opus": " Чурос – палички з м’якого тіста, на зрізі дуже схожі на зірку.",
+			  "image":"../../../assets/img/desserts/churros.jpg",
+			"price": 220,
+			"weight": 190,
+			"category": "desert"
+		 },
+		 {
+			"id": 8,
+			"name": "Брауні",
+			"opus": "Оригінальні брауні містили волоські горіхи і абрикосову глазур.",
+			  "image":"../../../assets/img/desserts/brownie.jpg",
+			"price": 255,
+			"weight": 360,
+			"category": "desert"
+		 },
+		 {
+			"id": 9,
+			"name": "Еклери",
+			"opus": "Найкраще еклери смакують з гарячими напоями, але це вже питання вподобань. ",
+			  "image":"../../../assets/img/desserts/eclairs.jpg",
+			"price": 275,
+			"weight": 230,
+			"category": "desert"
+		 },
+		 {
+			"id": 10,
+			"name": "Тарт Баноффі ",
+			"opus": "Англійці дуже полюбляють десерти з пісочного тіста.",
+			  "image":"../../../assets/img/desserts/tart-banoffi.jpg",
+			"price": 270,
+			"weight": 340,
+			"category": "desert"
+		 }
+	]
+}

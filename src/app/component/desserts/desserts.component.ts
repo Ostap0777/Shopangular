@@ -2,6 +2,7 @@ import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { desertsProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
+import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
 
 @Component({
   selector: 'app-desserts',
@@ -10,17 +11,34 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class DessertsComponent implements OnInit, OnDestroy {
 
-	desertProducts: desertsProducts[];
+	products: desertsProducts[];
 	productSubcription: Subscription;
+	sortedProducts: any[] = [];
+	sortingType: string = 'default';
+	isListOpen:boolean = false
 
-	constructor(private productsService : ProductService){}
+	constructor(private productsService : ProductService,private sortService: SortProductsService){}
+
+
+	toggleList() {
+		this.isListOpen = !this.isListOpen
+	}
 
 	ngOnInit(): void {
 		this.productsService.getDesertProducts().subscribe((data:any) => {
-			this.desertProducts = data.products;
+			this.products = data.products;
+			this.sortDesertsProducts()
 		})
 	}
 	ngOnDestroy(): void {
-		if(this.productSubcription) this.productSubcription.unsubscribe()
-	}
+		this.productSubcription.unsubscribe();
+		 }
+		 sortDesertsProducts() {
+		  this.sortedProducts = this.sortService.sortDesertsProducts(this.products, this.sortingType);
+		}
+	  onSortingChange(sortingType: string) {
+		  this.sortingType = sortingType;
+		  this.sortDesertsProducts();
+		
+		}
 }

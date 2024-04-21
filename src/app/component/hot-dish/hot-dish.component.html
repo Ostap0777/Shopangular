@@ -1,21 +1,24 @@
-<div class="hot-dist__container">
-	<h1 class="hot-dist__title">Гарячі страви</h1>
-	<div class="hot-dist__sort sort">
+<div class="dish__container">
+	<h1 class="dish__title">Гарячі страви</h1>
+	<div class="dish__sort sort">
 		<div class="sort__title">Сотрувати:</div>
 		<nav class="sort__list">
-			<ul class="list__items">
+			<span class="sort__icon"  [class.rotate]="isListOpen" (click)="toggleList()">
+				<img src="../../../assets/img/icon/Vector (4).svg" alt="">
+			</span>
+			<ul class="list__items" [ngClass]="{'show': isListOpen}">
 				<li (click)="onSortingChange('default')" class="list__item">За замовчуванням</li>
 				<li (click)="onSortingChange('ascending')" class="list__item">Ціна за зростанням</li>
 				<li (click)="onSortingChange('descending')" class="list__item">Ціна за спаданням</li>
-		  </ul>
+				</ul>
 		</nav>
 	</div>
 	<div class="product__container">
 		<div class="product__items">
-		<div class="product__item product" *ngFor="let product of hotProducts">
+		<div class="product__item product" *ngFor="let product of sortedProducts ">
 			<img class="product__image" src="{{product.image}}" alt="">
 			<a class="product__name" href="#">{{product.name}}</a>
-			<p class="product__weight">{{product.weight}}</p>
+			<p class="product__weight">{{product.weight}} г</p>
 			<p class="product__opus">{{product.opus}}</p>
 			<div class="product__additional">
 				<p class="product__price">{{product.price}} грн</p>

@@ -1,18 +1,21 @@
-<div class="hot-dist__container">
-	<h1 class="hot-dist__title">Напитки</h1>
-	<div class="hot-dist__sort sort">
+<div class="dish__container">
+	<h1 class="dish__title">Напитки</h1>
+	<div class="dish__sort sort">
 		<div class="sort__title">Сотрувати:</div>
 		<nav class="sort__list">
-			<select class="list__items">
-				<option class="list__item">За замовчуванням</option>
-				<option class="list__item">Ціна за зростанням</option>
-				<option class="list__item">Ціна за спаданням</option>
-			</select>
+			<span class="sort__icon"  [class.rotate]="isListOpen" (click)="toggleList()">
+				<img src="../../../assets/img/icon/Vector (4).svg" alt="">
+			</span>
+			<ul class="list__items" [ngClass]="{'show': isListOpen}">
+				<li (click)="onSortingChange('default')" class="list__item">За замовчуванням</li>
+				<li (click)="onSortingChange('ascending')" class="list__item">Ціна за зростанням</li>
+				<li (click)="onSortingChange('descending')" class="list__item">Ціна за спаданням</li>
+				</ul>
 		</nav>
 	</div>
 	<div class="products__container">
 		<div class="product__items">
-		<div class="product__item product" *ngFor="let product of drinkProducts">
+		<div class="product__item product" *ngFor="let product of sortedProducts">
 			<img class="product__image" src="{{product.image}}" alt="">
 			<a class="product__name" href="#">{{product.name}}</a>
 			<p class="product__weight">{{product.weight}} г</p>
