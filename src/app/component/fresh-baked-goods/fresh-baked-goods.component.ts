@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { bakedGoodsProducts } from 'src/app/models/products';
+import { IProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
 import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
+
 
 @Component({
   selector: 'app-fresh-baked-goods',
@@ -10,35 +11,33 @@ import { SortProductsService } from 'src/app/services/sort-products/sort-product
   styleUrls: ['./fresh-baked-goods.component.scss']
 })
 export class FreshBakedGoodsComponent implements OnInit, OnDestroy {
-   products: bakedGoodsProducts[];
+   products: IProducts[];
 	productSubcription: Subscription;
 	sortedProducts:any[] = [];
 	sortingType: string = 'dafault';
 	isListOpen:boolean = false
 
-	constructor(private productsService : ProductService,private sortService: SortProductsService) {}
+	constructor(private productsServices : ProductService, private sortService: SortProductsService) {}
 
 toggleList() {
 	this.isListOpen = !this.isListOpen
 }
 
-	ngOnInit(): void {
-		this.productsService.getBakesGoodsProducts().subscribe((data:any) => {
-         this.products = data.products
-			this.sortBakedFreshProducts()
-		})
-	}
-	ngOnDestroy(): void {
-		this.productSubcription.unsubscribe();
-	}
-
-	sortBakedFreshProducts() {
-		this.sortedProducts = this.sortService.sortBakedFreshProducts(this.products, this.sortingType)
-	}
-
-	onSortingChange(sortingType:string) {
-		this.sortingType = sortingType;
-		this.sortBakedFreshProducts()
-	}
+ngOnInit(): void {
+	this.productsServices.getProducts().subscribe(products => {
+	  this.products = products.filter(product => product.category === 'bakedGoods');
+	  this.sortProducts()
+	});
+ }
+ sortProducts() {
+	this.sortedProducts = this.sortService.sortProducts(this.products, this.sortingType)
+}
+ onSortingChange(sortingType: string) {
+	this.sortingType = sortingType;
+	this.sortProducts()
+ }
+ ngOnDestroy(): void {
+	if(this.productSubcription) this.productSubcription.unsubscribe()
+}
 }
 

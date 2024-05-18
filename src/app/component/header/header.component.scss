@@ -40,7 +40,7 @@
 
    }
 	&__item:hover {
-	opacity: 0.7;
+	
 	}
 	&__poshuk {
 	}
@@ -78,12 +78,13 @@
 	font-size: 14px;
 }
 .header-about-us {
-
 	&__icon img {
      align-self: center;
-	  
 	  margin-top: 5px;
 	}
+}
+.header-about-us:hover {
+opacity: 0.6;
 }
 
 .header-product {
@@ -112,6 +113,52 @@
 	}
 	&__item:hover {
 		text-decoration: underline;
+		opacity: 0.6;
 	}
 }
 
+
+
+@media(max-width: 845px) {
+	.header {
+		&__items {
+			display: none;
+		}
+		&__basket {
+			display: none;
+		}
+		&__account {
+			display: none;
+		}
+	}
+	.icon {
+		&__menu {
+			position: relative;
+			width: 30px;
+			height: 3px;
+			background-color: #fff;
+		}
+		&__menu::before {
+			content: '';
+			width: 30px;
+			height: 3px;
+			background-color: #fff;
+			position: absolute;
+			bottom: 10px;
+		}
+		&__menu:after {
+			content: '';
+			width: 30px;
+			height: 3px;
+			background-color: #fff;
+			position: absolute;
+			top: 10px;
+		}
+		&visible{
+			 background-color: black;
+		}
+	}
+}
+.visible span {
+	background-color: rgb(147, 19, 19);
+}

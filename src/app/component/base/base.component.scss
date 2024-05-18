@@ -47,6 +47,7 @@
 		font-weight: 500;
 		white-space: nowrap;
 		margin: 10px;
+		z-index: 5;
 	}
 	&__phone:hover {
 		text-decoration: underline;
@@ -216,9 +217,9 @@
 	}
 
 	&__items {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-gap: 20px;
+	
+		
+		
 	
 	}
 
@@ -243,10 +244,12 @@
 }
 .menu-img {
 
-	&__one {
+	&__one img{
+		max-width: 100%;
 	}
 
-	&__two {
+	&__two img {
+		max-width: 100%;
 	}
 }
 .menu-item {
@@ -266,12 +269,76 @@
 .menu-text {
 
 	&__one {
-   font-size: 60px;
+   font-size: 40px;
 	margin-top: 20px;
 	}
 
 	&__two {
-		font-size: 60px;
+		font-size: 40px;
 		margin-bottom: 20px;
+	}
+}
+
+.swiper {
+
+	&__container {
+
+	}
+	&__slide {
+      display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	
+	}
+}
+
+
+@media(max-width: 730px) {
+	.main {
+		&__foto {
+			
+		}
+		&__title {
+			font-size: 38px;
+			letter-spacing: 2px;
+			line-height: 120%;
+			z-index: 5;
+		}
+		&__before {
+			display: none;
+		}
+		&__after {
+			display: none;
+		}
+		&-two__product {
+			display: none;
+		}
+		&__info {
+			margin: 0px 0px;
+			gap: 50px;
+		}
+		&-phone__email {
+			font-size: 30px;
+		}
+	}
+}
+
+@media(max-width:600px) {
+	.main {
+		&__foto  {
+			width: 100%;
+		}
+		&__title {
+			margin-top:150px;
+		}
+		&-phone__email {
+			margin: 0px 0px 0px 0px;
+		}
+		&__info {
+			gap: 50px;
+		}
+		&__email {
+			margin-bottom: 20px;
+		}
 	}
 }

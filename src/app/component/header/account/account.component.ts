@@ -11,28 +11,30 @@ import { AccountService } from 'src/app/services/login/account.service';
 export class AccountComponent implements OnInit {
    loginForm: FormGroup
 
-	constructor(private router : Router, private accountServic : AccountService) {
+	constructor(private router : Router, private accountServices : AccountService) {
 
 	}
 
-  submitLogin() {
-	this.accountServic.login(this.loginForm.value).subscribe( {
-		next: () => this.router.navigate(['admin']),
-		error: (err) => alert(err.message)
+ngOnInit(): void {
+	this.loginForm = new FormGroup ({
+		'email': new FormControl('',[Validators.required, Validators.email]),
+		'password': new FormControl('',[Validators.required])
 	})
-  }
-	ngOnInit () {
-    this.loginForm = new FormGroup( {
-      'email' : new FormControl('', [Validators.required, Validators.email]),
-      'password' : new FormControl(
-        '', [Validators.required,
-        Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)])
-    });
+}
 
-	 if(this.accountServic.isLoggetIn()) {
-		this.router.navigate(['admin'])
-	 }
+submitLogin() {
+	if(this.loginForm.invalid) {
+		return
 	}
-
+	this.accountServices.login(this.loginForm.value).subscribe({
+		next : () => {
+			if(this.accountServices.isAdmin()){
+				this.router.navigate(['admin'])
+			} else {
+				this.router.navigate(['user'])
+			}
+		}
+		})
+}
 }
 

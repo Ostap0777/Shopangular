@@ -1,0 +1,30 @@
+.not-found__container {
+  margin-top: 100px;
+  text-align: center;
+}
+.not-found__box {
+  background-image: linear-gradient(357deg, rgba(208, 106, 54, 0.15) 0%, rgba(72, 93, 188, 0.15) 100%), linear-gradient(447deg, rgb(88, 1, 221), rgb(0, 0, 0));
+  width: 400px;
+  height: 130px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.not-found__title {
+  color: rgb(197, 197, 197);
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.not-found__opus {
+  font-size: 26px;
+  color: blanchedalmond;
+}
+
+.not-found__back {
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.not-found__back:hover {
+  color: rgb(26, 25, 25);
+}

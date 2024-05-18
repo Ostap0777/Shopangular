@@ -14,7 +14,7 @@ export class myGuard1Guard implements CanActivate {
 	}
 
 	canActivate(route:ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean{
-		if (!this.accountServices.isLoggetIn()) {
+		if (!this.accountServices.isLoggedIn()) {
 			if (state.url !== '/account') {
 			  this.route.navigate(['/account']);
 			}

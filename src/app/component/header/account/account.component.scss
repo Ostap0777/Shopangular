@@ -1,4 +1,4 @@
-.accout {
+.account {
 
 	&__container {
 		margin-top: 70px;
@@ -16,14 +16,18 @@
 		flex: 0 1 40%;
 		margin-top: 50px;
 	}
-
+   &__info {
+		position: relative;
+		z-index: 2;
+	}
 	&__container {
-
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		background-image: linear-gradient(360deg, rgb(21,48,129),rgb(75,68,170),rgb(75,68,170));
 		border-radius: 20px;
 		text-align: center;
+		z-index:2;
 		
 	}
 
@@ -50,9 +54,11 @@
 
 	&-group__one {
 		margin-bottom: 40px;
+		padding: 0px 20px;
 	}
 	&-group__two{
 		margin-bottom: 40px;
+		padding: 0px 20px;
 	}
 	&__group label {
       display: block;
@@ -65,7 +71,8 @@
 .form-user {
 
 	&__input {
-		width:300px;
+		
+		width: 100%;
 		height: 40px;
 		padding-left: 20px;
 	}
@@ -145,4 +152,63 @@
 	color: brown;
 	font-weight: 700;
 	font-size: 14px;
+}
+
+
+.password {
+
+	&__new {
+		font-size: 16px;
+		font-weight: 700;
+		color: #b8b8b8;
+		margin-top: 20px;
+		padding-right: 10px;
+	}
+	&__new:hover{
+		color: #ffffff;
+		cursor: pointer;
+	}
+}
+
+@media(max-width: 1000px) {
+	.login {
+		&__account {
+			flex: 0 1 60%;
+		}
+	}
+	.account {
+		&-image {
+			flex: 0 1 40%;
+		}
+	}
+}
+
+@media(max-width:650px) {
+	.login {
+		&__account {
+			flex: 0 1 80%;
+		}
+	}
+	.account {
+		&-image {
+			flex: 0 1 20%;
+		}
+		&__container {
+			gap: 0px;
+		}
+	}
+}
+
+@media(max-width:600px) {
+	.login {
+		&__account {
+			flex: 0 1 100%;
+		}
+	}
+	.account {
+		&-image {
+			flex: 0 1 0%;
+		}
+	
+	}
 }

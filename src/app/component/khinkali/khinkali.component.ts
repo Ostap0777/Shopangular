@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { khinkaliHachapProducts } from 'src/app/models/products';
+import { IProducts} from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
 import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
+
 
 @Component({
   selector: 'app-khinkali',
@@ -11,14 +12,14 @@ import { SortProductsService } from 'src/app/services/sort-products/sort-product
 })
 export class KhinkaliComponent implements OnInit, OnDestroy {
   
-	products : khinkaliHachapProducts[];
+	products : IProducts[];
 	productSubcription : Subscription;
 	sortedProducts:any[] = [];
 	sortingType: string = 'default';
 	isListOpen: boolean = false;
 
 
-constructor(private khinkaliHachapServices : ProductService, private sortService: SortProductsService) {}
+constructor(private productsServices : ProductService,private sortServices: SortProductsService ) {}
 
 
 toggleList() {
@@ -26,21 +27,20 @@ toggleList() {
 }
 
 ngOnInit(): void {
-	this.khinkaliHachapServices.getKhinkaliHachapProducts().subscribe((data:any) => {
-		this.products = data.products
-		this.sortKhinkaliHachapProducts()
-	})
-}
-ngOnDestroy(): void {
-	this.productSubcription.unsubscribe();
-}
+	this.productsServices.getProducts().subscribe(products => {
+	  this.products = products.filter(product => product.category === 'khinkaliHachap');
+	  this.sortProducts()
+	});
+ }
+ sortProducts() {
+	this.sortedProducts = this.sortServices.sortProducts(this.products, this.sortingType)
+ }
 
-sortKhinkaliHachapProducts() {
-  this.sortedProducts = this.sortService.sortKhinkaliHachapProducts(this.products, this.sortingType)
-}
-
-onSortingChange(sortingType: string) {
-this.sortingType = sortingType;
-this.sortKhinkaliHachapProducts()
+ onSortingChange(sortingType: string) {
+	this.sortingType = sortingType;
+	this.sortProducts()
+ }
+  ngOnDestroy(): void {
+	if(this.productSubcription) this.productSubcription.unsubscribe()
 }
 }

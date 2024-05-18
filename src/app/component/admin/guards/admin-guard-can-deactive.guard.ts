@@ -24,4 +24,3 @@ export class MyGuard2Guard implements CanDeactivate<any> {
     }
   }
 }
-

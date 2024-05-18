@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +9,6 @@ import { BaseComponent } from './component/base/base.component';
 import { WishListComponent } from './component/wish-list/wish-list.component';
 import { AccountComponent } from './component/header/account/account.component';
 import { AboutUsComponent } from './component/header/about-us/about-us.component';
-import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { SaladsComponent } from './component/salads/salads.component';
 import { SnackComponent } from './component/snack/snack.component';
@@ -29,6 +28,14 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { LoginInterceptor } from './interceptor/login.interceptor';
+import { UserHomeComponent } from './component/user/components/user-profile/home/user-home.component';
+import { InformationComponent } from './component/user/components/information/information.component';
+import { register } from 'swiper/element/bundle';
+import Swiper from 'swiper';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductCategoryComponent } from './product-category/product-category.component';
+
+register();
 
 @NgModule({
   declarations: [
@@ -39,7 +46,6 @@ import { LoginInterceptor } from './interceptor/login.interceptor';
     WishListComponent,
     AccountComponent,
     AboutUsComponent,
-    ProductDetailsComponent,
     NotFoundComponent,
     SaladsComponent,
     SnackComponent,
@@ -55,18 +61,23 @@ import { LoginInterceptor } from './interceptor/login.interceptor';
     PaymentComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UserHomeComponent,
+    InformationComponent,
+    ProductCategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true } 
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

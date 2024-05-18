@@ -4,42 +4,83 @@
   z-index: 10;
   width: 100%;
 }
-
 .header__container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 10px;
   gap: 20px;
   height: 60px;
 }
-.header__container .header__hello {
-  color: black;
-  font-size: 33px;
+.header__icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
-.header__container .header__basket {
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.header__items {
+  display: flex;
+}
+.header__item:hover {
+  opacity: 0.7;
+}
+.header__poshuk:hover {
+  opacity: 0.7;
+}
+.header__basket {
   color: #fff;
   font-size: 24px;
   padding: 5px 10px;
   border-radius: 5px;
 }
-.header__container .header-about-us {
+.header__basket:hover {
+  opacity: 0.6;
+}
+.header__account {
   color: #fff;
   font-size: 24px;
   padding: 5px 10px;
   border-radius: 5px;
 }
-.header__container .header__account {
+.header__account:hover {
+  opacity: 0.6;
+}
+
+.header-about-us {
   color: #fff;
   font-size: 24px;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 14px;
 }
-.header__container .header__account:hover {
-  color: #969696;
+
+.header-about-us__icon img {
+  align-self: center;
+  margin-top: 5px;
 }
-.header__container .header-about-us:hover {
-  color: #969696;
+
+.header-product__list {
+  position: absolute;
+  top: 55px;
 }
-.header__container .header__basket:hover {
-  color: #969696;
+
+.header-product__items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(74, 68, 107);
+  padding: 10px;
+  border-radius: 5px;
+}
+.header-product__item {
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.header-product__item:hover {
+  text-decoration: underline;
 }

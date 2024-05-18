@@ -1,9 +1,6 @@
-import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { AccountComponent } from './account/account.component';
-import { AccountService } from 'src/app/services/login/account.service';
-import { AdminStatusService } from 'src/app/services/AdminStatus/admin-status.service';
-import { Subscription } from 'rxjs';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AccountService } from 'src/app/services/login/account.service';
 
 @Component({
   selector: 'app-header',
@@ -12,24 +9,24 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-	coldDisher: boolean = false;
-	hotDisher: boolean = false;
+  coldDisher: boolean = false;
+  hotDisher: boolean = false;
+  isMenuOpen: boolean = false;
 
+  constructor(private router: Router, private accountService: AccountService) {}
 
+  toggleColdDish(): void {
+    this.coldDisher = !this.coldDisher;
+  }
 
+  toggleHotDish(): void {
+    this.hotDisher = !this.hotDisher;
+  }
 
-	constructor() {route: Router}
-	toggleColdDish():void {
-		this.coldDisher = !this.coldDisher;
-	}
-
-	toggleHotDish() {
-		this.hotDisher = !this.hotDisher;
-	}
-
-
-
-
+  logout(): void {
+    this.accountService.logout();
+  }
+  openMenu():void {
+	this.isMenuOpen = !this.isMenuOpen
+  }
 }
-
-

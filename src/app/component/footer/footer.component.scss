@@ -82,3 +82,37 @@
 .footer-two__info:hover {
   text-decoration: underline;
 }
+
+@media(max-width: 950px) {
+	.footer {
+		&__number {
+			display: none;
+		}
+	}
+}
+@media(max-width:730px) {
+	.footer {
+		&__communication {
+			gap: 15px;
+		}
+	}
+}
+
+@media(max-width: 670px) {
+	.footer {
+		&__communication {
+		display: none;
+		}
+	
+		&-two__rigth {
+			display: none;
+		}
+	}
+}
+@media(max-width:350px) {
+	.footer {
+		&__email {
+			display: none;
+		}
+	}
+}

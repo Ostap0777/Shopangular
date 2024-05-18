@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { bakedGoodsProducts, coldDishProducts, desertsProducts, drinksProducts, hotProducts } from 'src/app/models/products';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { Observable, Subscribable, Subscription } from 'rxjs';
+import { IProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
+import { DialogComponentComponent } from '../dialog-component/dialog-component.component';
 
 @Component({
   selector: 'app-products-list',
@@ -8,34 +11,38 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./products-list.component.scss']
 })
 export class ProductsListComponent implements OnInit {
+   products: IProducts[];
+	productSubscription: Subscription;
 
-	hotProducts: hotProducts[];
-	coldProducts: coldDishProducts[];
-	desertsProducts: desertsProducts[];
-	drinksProducts: drinksProducts[];
-	bakesGoodsProducts: bakedGoodsProducts[]
 
-	constructor(private productService: ProductService) {}
 
-	ngOnInit(): void {
-		this.productService.getHotProducts().subscribe((data: any) => {
-			this.hotProducts = data.products;
-		});
+	constructor(private productService: ProductService,public dialog: MatDialog) {}
 
-		this.productService.getColdDishProducts().subscribe((data:any) => {
-			this.coldProducts = data.products;
-		})
+ ngOnInit(): void {
+     this.productSubscription = this.productService.getAllProducts().subscribe((data:any) => {
+		this.products = data.products
+	  })
+ }
 
-		this.productService.getDesertProducts().subscribe((data:any) => {
-			this.desertsProducts = data.products;
-		})
+ deleteItem(id:number) {
+	this.productService.deleteProduct(id).subscribe((data:any) => console.log(data))
+	console.log(id)
+ }
 
-		this.productService.getDrinkProducts().subscribe((data:any) => {
-			this.drinksProducts = data.products;
-		})
+ openDialog():void {
+	let dialogConfig = new MatDialogConfig();
+	dialogConfig.width = '600px',
+	dialogConfig.disableClose = true
+	const dialogRef = this.dialog.open(DialogComponentComponent, dialogConfig)
+	dialogRef.afterClosed().subscribe( (data) => {
+		if(data)
+		this.postData(data)
+ });
+ }
 
-		this.productService.getBakesGoodsProducts().subscribe((data:any) => {
-			this.bakesGoodsProducts = data.products;
-		})
+	postData(data: IProducts) {
+		console.log(data)
+		this.productService.postProduct(data).subscribe((data) => this.products.push(data))
 	}
+
 }

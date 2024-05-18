@@ -1,8 +1,9 @@
 
-.products-list {
+.products {
 
 		&__container {
-			margin-top:  100px;
+			margin-top:  50px;
+			padding-bottom: 100px;
 			display: flex;
 			flex-direction: column;
 		}
@@ -13,6 +14,7 @@
 			color: azure;
 			font-weight: 700;
 			text-align: center;
+	
 		}
 }
 .products {
@@ -20,16 +22,84 @@
 		&__items {
 		}
 		&__create img {
-			width: 50px;
-			height: 50px;
+			width: 40px;
+			height: 40px;
 			background-color: rgb(184, 184, 184);
 			padding: 5px;
 		}
 		&__create img:hover {
 			background-color:#ffffff ;
+			cursor: pointer;
+		}
+		&__remove img {
+			width: 40px;
+			height: 40px;
+		}
+		&__remove img:hover {
+			background-color: #ffffff;
+			border-radius: 10%;
+			padding: 2px;
+		}
+		&_add {
+			display: flex;
+			gap: 100px;
+			border: 1px dashed #ccc;
+			justify-content: right;
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 38px;
+			color: #ffffff;
 		}
 }
 
 
 
+.add {
 
+
+	&__content {
+     display: inline-block;
+	  border-radius: 10px;
+	  padding: 10px;
+	  align-items: center;
+	  margin-left: 10px;
+	  margin-bottom: 10px;
+	  
+	}
+	&__content:hover {
+		background-image: linear-gradient(357deg, rgba(136, 85, 60, 0.15) 0%, rgba(44, 65, 158, 0.15) 100%), linear-gradient(447deg, rgba(88, 1, 221, 0.7), rgba(0, 0, 0, 0.3));
+	}
+	&__text {
+		font-size: 22px;
+		display: inline-block;
+		color: #ffffff;
+		font-weight: 700;
+		padding-right: 10px;
+	}
+
+	&__image {
+		width: 25px;
+		height: 25px;
+		justify-content: center;
+	}
+	&__image {
+	}
+}
+
+
+
+
+.product {
+
+	&-admin__additional {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&-admin__additional img {
+		height: 30px;
+		width: 30px;
+	}
+}

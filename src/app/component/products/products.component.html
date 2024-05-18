@@ -7,7 +7,7 @@
       <p class="product__weight">{{product.weight}} г</p>
       <a href="#" class="product__opus">{{product.opus}}</a>
       <div class="product__additional">
-        <p class="product__price">{{product.price}} грн</p>
+        <p class="product__price">{{product.price | currency: "₴"}}</p>
         <a href="#" class="product-add__basket"><img src="../../../assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
       </div>
     </div>

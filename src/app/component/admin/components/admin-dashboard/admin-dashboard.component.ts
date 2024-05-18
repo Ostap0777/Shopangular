@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AdminStatusService } from 'src/app/services/AdminStatus/admin-status.service';
 import { AccountService } from 'src/app/services/login/account.service';
 
 @Component({
@@ -7,16 +6,13 @@ import { AccountService } from 'src/app/services/login/account.service';
   templateUrl: './admin-dashboard.component.html',
   styleUrls: ['./admin-dashboard.component.scss']
 })
-export class AdminDashboardComponent implements OnInit{
+export class AdminDashboardComponent {
 
 
-	constructor(private adminServices: AdminStatusService) {	 
+	constructor() {	 
 
 	}
 
-ngOnInit(): void {
-	
-}
 
 
 }

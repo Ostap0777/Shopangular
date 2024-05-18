@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { snackProducts } from 'src/app/models/products';
+import { IProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
 import { SortProductsService } from 'src/app/services/sort-products/sort-products.service';
+
 
 @Component({
   selector: 'app-snack',
@@ -10,35 +11,38 @@ import { SortProductsService } from 'src/app/services/sort-products/sort-product
   styleUrls: ['./snack.component.scss']
 })
 export class SnackComponent implements OnInit,OnDestroy  {
-  products: snackProducts[];
+  products: IProducts[];
   productSubcription: Subscription;
   sortedProducts: any[] = [];
   sortingType: string = 'default';
   isListOpen: boolean = false
 
-  constructor(private snackServices: ProductService, private sortService: SortProductsService) {}
+  constructor(private productsServices: ProductService, private sortService: SortProductsService) {}
 
 
   toggleList() {
 	this.isListOpen = !this.isListOpen
   }
 
-ngOnInit(): void {
-	this.snackServices.getSnackProducts().subscribe((data:any) => {
-		this.products = data.products
-		this.sortSnackProducts()
-	})
-}
-ngOnDestroy(): void {
-	this.productSubcription.unsubscribe();
+  ngOnInit(): void {
+	const category = 'snack'
+	this.productSubcription = this.productsServices.getProducts().subscribe((data:any) => {
+		this.products = data.products;
+	  this.sortProducts()
+	});
 }
 
-sortSnackProducts() {
-	this.sortedProducts = this.sortService.sortSnackProducts(this.products, this.sortingType)
+ sortProducts() {
+	this.sortedProducts = this.sortService.sortProducts(this.products, this.sortingType)
 }
 
-onSortingChange(sortingType:string) {
+onSortingChange(sortingType: string) {
 	this.sortingType = sortingType;
-	this.sortSnackProducts()
+	this.sortProducts()
 }
+
+ngOnDestroy(): void {
+	if(this.productSubcription) this.productSubcription.unsubscribe()
+}
+
 }

@@ -1,0 +1,66 @@
+.feetback__container {
+  margin-top: 70px;
+  position: relative;
+}
+.feetback__title {
+  font-size: 70px;
+  color: #fff;
+}
+.feetback__content {
+  display: flex;
+  padding-top: 100px;
+}
+.feetback__info {
+  flex: 0 1 40%;
+}
+.feetback__image {
+  display: flex;
+  flex: 0 1 60%;
+}
+
+.form-group__one {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-group__two {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user__label {
+  font-size: 20px;
+  color: #9EA2AA;
+  letter-spacing: 1px;
+}
+.user__input {
+  width: 450px;
+  height: 150px;
+  border: 2px solid #9EA2AA;
+  border-radius: 5px;
+}
+
+.email__label {
+  font-size: 20px;
+  color: #9EA2AA;
+  letter-spacing: 1px;
+}
+.email__input {
+  height: 40px;
+  width: 350px;
+  border: 2px solid #9EA2AA;
+  border-radius: 5px;
+}
+
+.image__one {
+  position: absolute;
+  bottom: -250px;
+}
+.image__two {
+  position: absolute;
+  right: -50px;
+  top: 0px;
+}

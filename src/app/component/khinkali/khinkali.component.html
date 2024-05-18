@@ -1,16 +1,18 @@
 <div class="dish__container">
 	<h1 class="dish__title">Хінкалі та хачапурі</h1>
 	<div class="dish__sort sort">
+		<div class="sort__one">
 		<div class="sort__title">Сотрувати:</div>
-		<nav class="sort__list">
-			<span class="sort__icon"  [class.rotate]="isListOpen" (click)="toggleList()">
+			<span class="sort__icon" [class.rotate]="isListOpen" (click)="toggleList()">
 				<img src="../../../assets/img/icon/Vector (4).svg" alt="">
 			</span>
+		</div>
+		<nav class="sort__list">
 			<ul class="list__items" [ngClass]="{'show': isListOpen}">
 				<li (click)="onSortingChange('default')" class="list__item">За замовчуванням</li>
 				<li (click)="onSortingChange('ascending')" class="list__item">Ціна за зростанням</li>
 				<li (click)="onSortingChange('descending')" class="list__item">Ціна за спаданням</li>
-				</ul>
+			</ul>
 		</nav>
 	</div>
 	<div class="products__container">
@@ -21,7 +23,7 @@
 			<p class="product__weight">{{product.weight}} г</p>
 			<p class="product__opus">{{product.opus}}</p>
 			<div class="product__additional">
-				<p class="product__price">{{product.price}} грн</p>
+				<p class="product__price">{{product.price | currency: "₴"}}</p>
 				<a href="#" class="product-add__basket"><img src="../../../assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
 			 </div>
 			</div>

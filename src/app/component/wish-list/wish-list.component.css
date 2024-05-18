@@ -1,0 +1,48 @@
+.hot-dist__container {
+  margin-top: 70px;
+}
+.hot-dist__title {
+  font-size: 66px;
+  color: #ffffff;
+  line-height: 90px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.hot-dist__sort {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.sort {
+  margin-top: 30px;
+}
+.sort__title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #9EA2AA;
+}
+.product__item {
+  display: flex;
+  flex-direction: column;
+}
+.product__image {
+  height: 170px;
+  width: 170px;
+}
+.product__name {
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.product__opus {
+  font-size: 13px;
+  line-height: 18px;
+  color: #9EA2AA;
+}
+.product__price {
+  font-size: 23px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 800;
+}

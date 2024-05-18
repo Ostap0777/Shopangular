@@ -1,1 +1,48 @@
-<p>products-details works!</p>
+<app-admin-header></app-admin-header>
+<div class="product-details__container product" *ngIf="product">
+  <div class="product__info">
+	<div class="product__close close">
+		<p routerLink="/admin/products" class="close__icon"></p>
+	</div>
+	<h1 class="product__name">{{product.name}}</h1>
+	<div class="product__content" >
+		<div class="product__image">
+			<img src="{{product.image}}" alt="">
+		</div>
+		<div class="product__detail">
+			<div class="product__opus">{{product.opus}}</div>
+			<div class="product__weigth">{{product.weight}} г</div>
+			<div class="product__price">{{product.price | currency: "₴"}}</div>
+		</div>
+	</div>
+</div>
+	<div class="product__create create">
+		<h2 class="create__title">Редагуйте продукт:</h2>
+		<form class="create__form" action="" [formGroup]="myForm">
+			<div class="mat-form-field">
+				<label class="create-product__label" for="">Назва продукту:</label>
+				<input class="create-product__input" formControlName="name" type="text" placeholder="Назва" name="" id="">
+			 </div>
+			 <div class="mat-form-field">
+				<label class="create-product__label" for="">Опис:</label>
+				<input class="create-product__input" formControlName="opus" type="text" placeholder="Опис" name="" id="">
+			 </div>
+			 <div class="mat-form-field">
+				<label class="create-product__label" for="">Вага:</label>
+				<input class="create-product__input" formControlName="weight" type="text" placeholder="Вага" name="" id="">
+			 </div>
+			 <div class="mat-form-field">
+				<label class="create-product__label" for="">Ціна:</label>
+				<input class="create-product__input" formControlName="price" type="text" placeholder="Ціна" name="" id="">
+			 </div>
+			 <div class="create__buttons">
+			 <button class="create__button">Змінити</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
