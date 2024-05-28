@@ -9,12 +9,18 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-	url: string = 'https://api.npoint.io/b23895b8043426ca41b4';
+	url: string = 'https://products-49eaf-default-rtdb.firebaseio.com/products.json';
+	urlBasked: string = 'https://api.npoint.io/b23895b8043426ca41b4/basket'
+	
 
 	  constructor(private http: HttpClient) { }
 
 	  getAllProducts() {
 		return this.http.get<IProducts[]>(`${this.url}`)
+	  }
+
+	  getProductToBasket(product:IProducts) {
+		return this.http.post<IProducts>(this.url, product)
 	  }
 
 	  getProduct(id:number) {

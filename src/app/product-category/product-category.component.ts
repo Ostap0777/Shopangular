@@ -33,6 +33,10 @@ ngOnInit(): void {
 	});
  };
 
+ addToBasket(product:IProducts){
+	this.productService.getProductToBasket(product).subscribe((data) => console.log(data))
+ }
+
 sortProducts() {
   this.sortedProducts= this.sortService.sortProducts(this.products, this.sortingType)
 }

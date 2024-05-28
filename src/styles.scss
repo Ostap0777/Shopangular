@@ -119,7 +119,9 @@ button {
 
 
 
-
+.no-scroll {
+	overflow: hidden;
+ }
 
 
 
@@ -409,3 +411,296 @@ button {
 
 
 
+
+
+
+.main {
+
+	&__foto {
+		position: absolute;
+		z-index: 3;
+		right: 0;
+		width: 70%;
+		padding-top: 60px;
+	}
+
+	&__container {
+		position: relative;
+		padding-top: 70px;
+	}
+
+	&__content {
+		display: flex;
+		gap: 50px;
+		max-width: 100px;
+	}
+
+	&__info {
+		margin: 50px 0px;
+		display: flex;
+		flex-direction: column;
+		gap:200px;
+	}
+
+	&__title {
+		font-size: 25px;
+		line-height: 31px;
+		color: #fff;
+	}
+
+	&__before {
+		position: absolute;
+		left: -70px;
+		top: 225px;
+	}
+
+	&__phone {
+      color: #fff;
+		font-size: 25px;
+		line-height: 30px;
+		font-weight: 500;
+		white-space: nowrap;
+		margin: 10px;
+		z-index: 5;
+	}
+	&__phone:hover {
+		text-decoration: underline;
+	}
+   &__phone:hover {
+		text-decoration: underline;
+      color: #fff;
+	}
+	&__email {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 500;
+		color: #fff;
+	}
+   &__email:hover {
+		text-decoration: underline;
+	}
+	&__product-two {
+		display: flex;
+	}
+
+	&__info-product {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__product {
+	}
+
+	&__after {
+		position: absolute;
+		z-index: 5;
+		right: -5%;
+		top: 500px;
+	}
+}
+.main-phone {
+
+	&__email {
+		margin-bottom: 150px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+.product {
+
+	&__info {
+	}
+
+	&__name {
+		display: block;
+		font-size: 20px;
+		line-height: 25px;
+		color: #FFFFFF;
+		margin-bottom: 10px;
+	}
+   &__name:hover {
+		text-decoration: underline;
+
+	}
+	&__weight {
+		display: inline-block;
+		color: #fff;
+		padding: 3px 5px;
+		border-radius: 5px;
+
+		background-color: rgba(121, 120, 120, 0.7)
+	}
+
+	&__price {
+		padding-bottom: 20px;
+		font-size: 23px;
+		color:#fff;
+		font-weight: 800;
+		top: -10%;
+	}
+}
+.product-price {
+
+	&__add {
+		align-items: center;
+		margin-left: 20px;
+		display: flex;
+		gap: 20px;
+	}
+
+}
+.main-two {
+
+	&__product {
+		position: absolute;
+		background: rgba(255, 0, 0, 0.85);
+		z-index: 5;
+		top: 500px;
+		left:35% ;
+		width: 320px;
+		height: 287px;
+		border-radius: 10px;
+		padding: 10px 30px;
+	}
+}
+.two-product {
+
+	&__name {
+		display: block;
+		font-size: 25px;
+		color: #fff;
+		line-height: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__name:hover {
+		text-decoration: underline;
+	}
+	&__info {
+		display: inline-block;
+  background-color: rgba(121, 120, 120, 0.4);
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 0px 5px;
+  line-height: 21px;
+  margin: 0px 0px 10px 0px;
+  color: #ffffff;
+	}
+
+	&__opus {
+	
+		font-size: 15px;
+		color: #FFFFFF;
+		opacity: 80%;
+		line-height: 21px;
+	}
+}
+.product-img {
+
+	&__koshuk {
+		padding: 10px;
+		background-color:  #FBD13E;
+	}
+	&__koshuk:hover {
+		background-color: #907928 ;
+	}
+}
+
+
+
+.main {
+
+	&__menu {
+	  margin: 100px 0px;
+	}
+}
+.menu {
+
+	&__title {
+		font-size: 70px;
+		color: #fff;
+		text-align: center;
+		border-bottom: 3px solid #fff;
+		padding: 20px 0px;
+	}
+
+	&__info {
+		margin-top: 100px;
+	}
+
+	&__items {
+	
+		
+		
+	
+	}
+
+	&__item {
+		height: 310px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		background-color: rgb(22, 13, 57);
+	}
+	&__item:hover {
+		background-color: rgb(41, 41, 134);
+	}
+	&-item__one {
+		background-color: rgb(214, 41, 41);
+		text-transform: uppercase;
+	}
+	&-item__one:hover {
+		background-color: rgb(126, 26, 26);
+	}
+}
+.menu-img {
+
+	&__one img{
+		max-width: 100%;
+	}
+
+	&__two img {
+		max-width: 100%;
+	}
+}
+.menu-item {
+
+	&__text {
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: 1px;
+		line-height: 25px;
+	}
+	&__text:hover {
+		text-decoration: underline;
+		opacity: 0.7;
+	}
+}
+
+.menu-text {
+
+	&__one {
+   font-size: 40px;
+	margin-top: 20px;
+	}
+
+	&__two {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+.swiper {
+
+	&__container {
+
+	}
+	&__slide {
+      display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	
+	}
+}

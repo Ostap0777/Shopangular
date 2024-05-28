@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import { AccountService } from 'src/app/services/login/account.service';
 
 @Component({
@@ -7,13 +7,31 @@ import { AccountService } from 'src/app/services/login/account.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   coldDisher: boolean = false;
   hotDisher: boolean = false;
   isMenuOpen: boolean = false;
+  isIconClick: boolean = false;
 
-  constructor(private router: Router, private accountService: AccountService) {}
+  constructor(
+    private router: Router, 
+    private accountService: AccountService,
+    private activatedRoute: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        this.closeMenu();
+      }
+    });
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+    document.body.classList.remove('no-scroll');
+  }
 
   toggleColdDish(): void {
     this.coldDisher = !this.coldDisher;
@@ -23,10 +41,23 @@ export class HeaderComponent {
     this.hotDisher = !this.hotDisher;
   }
 
+
+
   logout(): void {
     this.accountService.logout();
   }
-  openMenu():void {
-	this.isMenuOpen = !this.isMenuOpen
+
+  openMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  iconClick(): void {
+    this.isIconClick = !this.isIconClick;
   }
 }
+

@@ -1,11 +1,11 @@
 <header class="header">
 <div class="header__container">
-	<img routerLink="/app" class="header__icon" src="../../../assets/img/icon/Logo (1).svg" alt="">
+	<img routerLink="/app" class="header__logo" src="../../../assets/img/icon/Logo (1).svg" alt="">
 	<div class="header__menu">
-		<nav class="header__list">
+		<nav class="header__list" [ngClass]="{ 'isMenuOpen': isMenuOpen }">
 			<ul class="header__items">
 				<li class="header__item">
-					<a routerLink="/about-us" class="header-about-us">Акції</a>
+					<a routerLink="/about-us" class="header-about-us">Про нас</a>
 				</li>
 				<li class="header__item">
 					<div class="header__content">
@@ -48,7 +48,6 @@
 						</li>
 					</ul>
 				</nav>
-				
 			</li>
 				<li class="header__item">
 					<a routerLink="/freshBakedGoods" class="header-about-us">Свіжа випічка</a>
@@ -65,7 +64,11 @@
 <div class="header__icon">
   <a routerLink="/basket" class="header__basket"><img src="../../../assets/img/icon/Vector (6).svg" alt=""></a>
   <a routerLink="/account" class="header__account"><img src="../../../assets/img/icon/Vector (7).svg" alt=""></a>
-  <span class="icon__menu" (click)="openMenu" [ngClass]="{'visible': isMenuOpen}"></span>
+  <button class="icon__menu" (click)="openMenu();iconClick()" [ngClass]="{'isIconClick': isIconClick}">
+	<span></span>
+	<span></span>
+	<span></span>
+  </button>
 </div>
 </div>
 </header>

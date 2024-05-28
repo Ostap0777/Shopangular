@@ -139,3 +139,41 @@
 }
 
 
+
+@media(max-width: 750px) {
+	.product-details {
+		&__container {
+			gap: 50px;
+		}
+	}
+	.product {
+		&__info {
+			padding: 20px;
+		}
+		&__create {
+			padding: 20px 0px;
+		}
+	}
+
+}
+
+@media(max-width:650px) {
+	.product {
+		&__info {
+			flex: 0 1 100%;
+		}
+		&__create {
+			flex: 0 1 100%;
+		}
+	}
+	.product-details {
+	&__container {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-around;
+		gap: 30px;
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
+}
+}

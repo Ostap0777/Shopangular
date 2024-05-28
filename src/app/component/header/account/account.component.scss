@@ -204,11 +204,32 @@
 		&__account {
 			flex: 0 1 100%;
 		}
+		&__title {
+			margin: 0px 0px 0px 0px;
+			line-height: 120%;
+		}
 	}
 	.account {
 		&-image {
 			flex: 0 1 0%;
 		}
-	
+}
+	.form {
+
+		&-group__one {
+			margin-bottom: 20px;
+			padding: 0px 10px;
+		}
+		&-group__two{
+			margin-bottom: 20px;
+			padding: 0px 10px;
+		}
+		&__group label {
+			display: block;
+			margin-bottom: 10px;
+			color: #ffffff;
+			letter-spacing: 1px;
+			font-size: 18px;
+		}
 	}
 }

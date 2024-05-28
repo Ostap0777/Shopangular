@@ -10,16 +10,8 @@ import { WishListComponent } from './component/wish-list/wish-list.component';
 import { AccountComponent } from './component/header/account/account.component';
 import { AboutUsComponent } from './component/header/about-us/about-us.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
-import { SaladsComponent } from './component/salads/salads.component';
-import { SnackComponent } from './component/snack/snack.component';
-import { FreshBakedGoodsComponent } from './component/fresh-baked-goods/fresh-baked-goods.component';
 import { DessertsComponent } from './component/desserts/desserts.component';
-import { DrinksComponent } from './component/drinks/drinks.component';
 import { FeetbackComponent } from './component/feetback/feetback.component';
-import { ColdDishComponent } from './component/cold-dish/cold-dish.component';
-import { HotDishComponent } from './component/hot-dish/hot-dish.component';
-import { SoupsComponent } from './component/soups/soups.component';
-import { KhinkaliComponent } from './component/khinkali/khinkali.component';
 import { DeliveryComponent } from './component/footer/delivery/delivery.component';
 import { PaymentComponent } from './component/footer/payment/payment.component';
 import { ContactComponent } from './component/footer/contact/contact.component';
@@ -34,6 +26,9 @@ import { register } from 'swiper/element/bundle';
 import Swiper from 'swiper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCategoryComponent } from './product-category/product-category.component';
+import { DialogHelpComponent } from './dialog-help/dialog-help.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 register();
 
@@ -47,16 +42,8 @@ register();
     AccountComponent,
     AboutUsComponent,
     NotFoundComponent,
-    SaladsComponent,
-    SnackComponent,
-    FreshBakedGoodsComponent,
     DessertsComponent,
-    DrinksComponent,
     FeetbackComponent,
-    ColdDishComponent,
-    HotDishComponent,
-    SoupsComponent,
-    KhinkaliComponent,
     DeliveryComponent,
     PaymentComponent,
     ContactComponent,
@@ -64,7 +51,8 @@ register();
     FooterComponent,
     UserHomeComponent,
     InformationComponent,
-    ProductCategoryComponent
+    ProductCategoryComponent,
+    DialogHelpComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +61,7 @@ register();
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
+	 MatDialogModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true } 

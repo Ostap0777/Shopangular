@@ -19,7 +19,7 @@ export class ProductsListComponent implements OnInit {
 	constructor(private productService: ProductService,public dialog: MatDialog) {}
 
  ngOnInit(): void {
-     this.productSubscription = this.productService.getAllProducts().subscribe((data:any) => {
+     this.productSubscription = this.productService.getProductsByCategory().subscribe((data:any) => {
 		this.products = data.products
 	  })
  }

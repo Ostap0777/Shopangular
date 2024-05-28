@@ -121,44 +121,96 @@ opacity: 0.6;
 
 @media(max-width: 845px) {
 	.header {
+		&__logo{
+			width: 150px;
+		}
 		&__items {
-			display: none;
+			display: block;
 		}
 		&__basket {
-			display: none;
+			padding: 5px 5px;
+			z-index: 10;
+		}
+		&__item {
+			padding: 30px 0px 0px 0px;
+			text-align: center;
+		}
+		&-about-us {
+			font-size: 22px;
 		}
 		&__account {
-			display: none;
+			padding: 5px 5px;
+			z-index: 10;
+		}
+		&__list {
+			position: absolute;
+			z-index: 5;
+			right: -100%;
+			top: 0;
+			transition: right 0.5s ease;
+		 &.isMenuOpen {
+			right:0%;
+			padding-top: 50px;
+			transition: right 0.5s ease;
+			width: 100%;
+			background-image: linear-gradient(357deg, rgba(168, 105, 74, 0.15) 0%,rgba(49, 77, 202, 0.15) 100%),linear-gradient(447deg, rgb(139, 90, 212),rgb(0,0,0));
+			height: 100vh;
+			overflow-y: auto;
+		}
+		}
+	}
+	.header-product {
+
+		&__list {
+			position: relative;
+			top: 0px;
+		}
+		&__items {
+			background:none;
+			padding: 10px 0px 0px;
+		}
+		&__item {
+			font-size: 20px;
+			padding: 10px 0px 0px 0px;
 		}
 	}
 	.icon {
 		&__menu {
 			position: relative;
 			width: 30px;
+			z-index: 5;
 			height: 3px;
-			background-color: #fff;
+
+			&.isIconClick span{
+				&:nth-child(1) {
+					transform: translateY(0) rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				 }
+				 &:nth-child(3) {
+					transform:translateY(0) rotate(-45deg);
+				 }
+			}
+
 		}
-		&__menu::before {
-			content: '';
+		&__menu span {
+			position: absolute;
 			width: 30px;
 			height: 3px;
 			background-color: #fff;
-			position: absolute;
-			bottom: 10px;
+			right: 0px;
+			transition: transform .3s, opacity .3s, background-color .3s;
 		}
-		&__menu:after {
-			content: '';
-			width: 30px;
-			height: 3px;
-			background-color: #fff;
-			position: absolute;
-			top: 10px;
+		&__menu span:nth-child(1) {
+			transform: translateY(-10px);
 		}
-		&visible{
-			 background-color: black;
-		}
+		&__menu span:nth-child(3) {
+			transform: translateY(10px);
+		}	
+
 	}
+
+
 }
-.visible span {
-	background-color: rgb(147, 19, 19);
-}
+
