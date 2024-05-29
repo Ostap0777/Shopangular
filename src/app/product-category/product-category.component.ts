@@ -28,13 +28,13 @@ toggleList() {
 ngOnInit(): void {
 	this.category = this.route.snapshot.data['category'];
 	this.productsSubscription = this.productService.getProductsByCategory().subscribe((data: any) => {
-	  this.products = data.products.filter((products:any) => products.category === this.category)
+	  this.products = data.filter((products:any) => products.category === this.category)
 	  this.sortProducts()
 	});
  };
 
  addToBasket(product:IProducts){
-	this.productService.getProductToBasket(product).subscribe((data) => console.log(data))
+	this.productService.postProductToBasket(product).subscribe((data) => console.log(data))
  }
 
 sortProducts() {

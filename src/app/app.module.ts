@@ -10,8 +10,6 @@ import { WishListComponent } from './component/wish-list/wish-list.component';
 import { AccountComponent } from './component/header/account/account.component';
 import { AboutUsComponent } from './component/header/about-us/about-us.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
-import { DessertsComponent } from './component/desserts/desserts.component';
-import { FeetbackComponent } from './component/feetback/feetback.component';
 import { DeliveryComponent } from './component/footer/delivery/delivery.component';
 import { PaymentComponent } from './component/footer/payment/payment.component';
 import { ContactComponent } from './component/footer/contact/contact.component';
@@ -42,8 +40,6 @@ register();
     AccountComponent,
     AboutUsComponent,
     NotFoundComponent,
-    DessertsComponent,
-    FeetbackComponent,
     DeliveryComponent,
     PaymentComponent,
     ContactComponent,

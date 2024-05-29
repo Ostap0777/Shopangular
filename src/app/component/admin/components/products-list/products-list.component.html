@@ -1,24 +1,22 @@
 <app-admin-header></app-admin-header>
-	<div class="products__container">
-		<h1 class="products__title">Загальний список продуктів</h1>
-		<div class="product__add add">
-		 <div class="add__content" (click)="openDialog()">
-			<p class="add__text">Додати</p>
-			<img class="add__image" src="../../../../../assets/img/adminCreate/free-icon-plus-3303893.png" alt="">
-		 </div>
-    	</div>
-		<div class="product__items" >
-		<div class="product__item product" *ngFor="let product of products">
-			<img class="product__image" src="{{product.image}}" alt="">
-			<a class="product__name" href="#">{{product.name}}</a>
-			<p class="product__weight">{{product.weight}} г</p>
-			<p class="product__opus">{{product.opus}}</p>
-			<div class="product-admin__additional">
-				<p class="product__price">{{product.price | currency: "₴"}}</p>
-				<a class="products__remove" (click)="deleteItem(product.id)"><img  src="../../../../../assets/img/icon/54324.png" alt=""></a>
-				<a [routerLink]="['/admin/product', product.id]" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
-			 </div>
-		</div>
+ <div class="products__container">
+  <h1 class="products__title">Загальний список продуктів</h1>
+  <div class="product__add add">
+   <div class="add__content" (click)="openDialog()">
+   <p class="add__text">Додати</p>
+   <img class="add__image" src="../../../../../assets/img/adminCreate/free-icon-plus-3303893.png" alt="">
+   </div>
+     </div>
+  <div class="product__items" >
+  <div class="product__item product" *ngFor="let product of products">
+   <img class="product__image" src="{{product.image}}" alt="">
+   <a class="product__name" href="#">{{product.name}}</a>
+   <p class="product__weight">{{product.weight}} г</p>
+   <p class="product__opus">{{product.opus}}</p>
+   <div class="product-admin__additional">
+    <p class="product__price">{{product.price | currency: "₴"}}</p>
+    <a class="products__remove" (click)="deleteItem(product.id)"><img  src="../../../../../assets/img/icon/54324.png" alt=""></a>
+    <a [routerLink]="['/admin/product', product.id]" class="products__create"><img src="../../../../../assets/img/adminCreate/free-icon-pencil-124738.png" alt=""></a>
+    </div>
+  </div>
  </div>
-
- 

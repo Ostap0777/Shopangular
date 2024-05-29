@@ -8,13 +8,15 @@ import { ProductService } from 'src/app/services/product.service';
 import { DialogComponentComponent } from '../dialog-component/dialog-component.component';
 import { FormControl, FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-products-details',
   templateUrl: './products-details.component.html',
   styleUrls: ['./products-details.component.scss']
 })
 export class ProductsDetailsComponent implements OnInit {
-  product:IProducts;
+  products:IProducts[];
+  product: IProducts
   id:number;
   productSubscription: Subscription;
   routeSubscription: Subscription;
@@ -37,9 +39,7 @@ export class ProductsDetailsComponent implements OnInit {
  }
 
  updateData(product: IProducts) {
-	this.productService.updeteProduct(product).subscribe((data) => {
-
-	})
+	this.productService.updateProduct(product).subscribe((data) => console.log(data))
  }
 
   ngOnDestroy(): void {

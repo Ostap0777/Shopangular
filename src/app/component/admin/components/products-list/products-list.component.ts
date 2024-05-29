@@ -11,38 +11,38 @@ import { DialogComponentComponent } from '../dialog-component/dialog-component.c
   styleUrls: ['./products-list.component.scss']
 })
 export class ProductsListComponent implements OnInit {
-   products: IProducts[];
-	productSubscription: Subscription;
+	 products: IProducts[];
+    productSubscription: Subscription;
 
 
 
-	constructor(private productService: ProductService,public dialog: MatDialog) {}
+ constructor(private productService: ProductService,public dialog: MatDialog) {}
 
  ngOnInit(): void {
-     this.productSubscription = this.productService.getProductsByCategory().subscribe((data:any) => {
-		this.products = data.products
-	  })
+     this.productSubscription = this.productService.getAllProducts().subscribe((data:any) => {
+  this.products = data
+   })
  }
 
  deleteItem(id:number) {
-	this.productService.deleteProduct(id).subscribe((data:any) => console.log(data))
-	console.log(id)
+ this.productService.deleteProduct(id).subscribe((data:any) => console.log(data))
+ console.log(id)
  }
 
  openDialog():void {
-	let dialogConfig = new MatDialogConfig();
-	dialogConfig.width = '600px',
-	dialogConfig.disableClose = true
-	const dialogRef = this.dialog.open(DialogComponentComponent, dialogConfig)
-	dialogRef.afterClosed().subscribe( (data) => {
-		if(data)
-		this.postData(data)
+ let dialogConfig = new MatDialogConfig();
+ dialogConfig.width = '600px',
+ dialogConfig.disableClose = true
+ const dialogRef = this.dialog.open(DialogComponentComponent, dialogConfig)
+ dialogRef.afterClosed().subscribe( (data) => {
+  if(data)
+  this.postData(data)
  });
  }
 
-	postData(data: IProducts) {
-		console.log(data)
-		this.productService.postProduct(data).subscribe((data) => this.products.push(data))
-	}
+ postData(data: IProducts) {
+  console.log(data)
+  this.productService.postProduct(data).subscribe((data) => this.products.push(data))
+ }
 
 }

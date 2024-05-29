@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ProductService {
 
 	url: string = 'https://products-49eaf-default-rtdb.firebaseio.com/products.json';
-	urlBasked: string = 'https://api.npoint.io/b23895b8043426ca41b4/basket'
+	urlBasket: string = 'https://basket-a3187-default-rtdb.firebaseio.com/basket.json'
 	
 
 	  constructor(private http: HttpClient) { }
@@ -18,13 +18,15 @@ export class ProductService {
 	  getAllProducts() {
 		return this.http.get<IProducts[]>(`${this.url}`)
 	  }
-
-	  getProductToBasket(product:IProducts) {
-		return this.http.post<IProducts>(this.url, product)
+	  postProductToBasket(product:IProducts) {
+		return this.http.post<IProducts>(this.urlBasket, [product])
+	  }
+	  getProductsFromBasket() {
+		return this.http.get<IProducts[]>(`${this.urlBasket}`)
 	  }
 
 	  getProduct(id:number) {
-		return this.http.get<IProducts>(`${this.url}/products/${id}`)
+		return this.http.get<IProducts>(`https://products-49eaf-default-rtdb.firebaseio.com/products/${id}.json`)
 	  }
 
 	  getProductsByCategory(){
@@ -32,19 +34,15 @@ export class ProductService {
 	 }
 	
 
-	  getProducts() {
-		return this.http.get<IProducts[]>(`${this.url}`)
-	  }
-
 		postProduct(product: IProducts) {
 		return this.http.post<IProducts>(this.url, product)
 	  }
 
-	  updeteProduct(product:IProducts) {
-		return this.http.put<IProducts>(`${this.url}/${product.id}`, product)
+	  updateProduct(product:IProducts) {
+		return this.http.put<IProducts>(`https://products-49eaf-default-rtdb.firebaseio.com/products/${product.id}.json`, product)
 	  }
 	
 	  deleteProduct(id:number) {
-		return this.http.delete<any>(`${this.url}/products/${id}`)
+		return this.http.delete<any>(`https://products-49eaf-default-rtdb.firebaseio.com/products/${id}.json`)
 	  }
 }
