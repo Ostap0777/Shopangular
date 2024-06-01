@@ -18,7 +18,7 @@
 	<div class="products__container">
 		<div class="product__items">
 		<div class="product__item product" *ngFor="let product of sortedProducts">
-			<img class="product__image" src="{{product.image}}" alt="">
+			<img class="product__image" loading="lazy" src="{{product.image}}" alt="">
 			<a class="product__name">{{product.name}}</a>
 			<p class="product__weight">{{product.weight}} г</p>
 			<p class="product__opus">{{product.opus}}</p>
@@ -38,7 +38,7 @@
 					<p>Акції</p>
 				</div>
 				<div class="menu-text__two">20%</div>
-			</div>
+			 </div>
 		</swiper-slide>
 		<swiper-slide class="swiper__item" routerLink="/hotDish">
 			<div class="menu__item">
@@ -51,7 +51,7 @@
 				 <div class="menu-img__two">
 					  <img src="../../../assets/img/menu/меню-гарачі блюда/image 17.svg" alt="">
 				 </div>
-			</div>
+			 </div>
 	  </swiper-slide>
 		<swiper-slide class="swiper__item" routerLink="/soups">
 			<div class="menu__item">
