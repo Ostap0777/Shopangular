@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { Basket, IProducts } from '../models/products';
+import { IProducts } from '../models/products';
 import { Observable } from 'rxjs';
 
 
@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-	url: string = 'https://products-49eaf-default-rtdb.firebaseio.com/products.json';
-	urlBasket: string = 'https://products-49eaf-default-rtdb.firebaseio.com/basket.json'
+	url: string = 'https://basket-a3187-default-rtdb.firebaseio.com/products.json';
+	urlBasket: string = 'https://basket-a3187-default-rtdb.firebaseio.com/basket.json'
 	
 
 	  constructor(private http: HttpClient) { }
@@ -22,7 +22,7 @@ export class ProductService {
 		return this.http.post<IProducts>(this.urlBasket, product)
 	  }
 	  getProductsFromBasket() {
-		return this.http.get<Basket[]>(`${this.urlBasket}`)
+		return this.http.get<IProducts[]>(`${this.urlBasket}`)
 	  }
 	  deleteProductsFromBasket(key:string) {
 		return this.http.delete<any>(`https://basket-a3187-default-rtdb.firebaseio.com/basket/${key}.json`)

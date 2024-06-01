@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Basket, IProducts } from 'src/app/models/products';
+import { IProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -10,26 +10,28 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class BasketComponent implements OnInit, OnDestroy{
 constructor(private productService: ProductService) {};
-basketProduct: Basket[];
+product: IProducts[];
 basketSubscription: Subscription;
 
 ngOnInit(): void {
-	this.basketSubscription = this.productService.getProductsFromBasket().subscribe((data:any) => {
-		console.log(data)
-		this.totalPrice()
-	})
+	this.basketSubscription = this.productService.getProductsFromBasket().subscribe((data: any) => {
+		 this.product = Object.keys(data).map(key => ({ id: key, ...data[key] }));
+		 console.log(data.product)
+		 this.totalPrice();
+	});
 }
-removeProductToBasket(product: Basket) {
-	this.basketSubscription = this.productService.deleteProductsFromBasket(product.key).subscribe(() => {
-		let idx = this.basketProduct.findIndex((data) => data.id === product.id)
-		this.basketProduct.splice(idx,1)
+
+removeProductToBasket(product: IProducts) {
+	this.basketSubscription = this.productService.deleteProductsFromBasket(product.id).subscribe(() => {
+		let idx = this.product.findIndex((data) => data.id === product.id)
+		this.product.splice(idx,1)
 	})
  }
 
  totalPrice() {
 	let totalPrice = 0;
 
-	for(let product of this.basketProduct) {
+	for(let product of this.product) {
 		totalPrice += product.price
 	}
 	return totalPrice
