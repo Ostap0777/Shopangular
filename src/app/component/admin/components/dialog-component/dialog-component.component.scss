@@ -62,3 +62,36 @@
 	}
 }
 
+@media(max-width:770px) {
+	.add-product {
+
+		&__title {
+			font-size: 28px;
+			padding: 5px 0px;
+			text-align: center;
+		}
+		&__info {
+			background-image: linear-gradient(357deg, rgba(60, 36, 24, 0.15) 0%, rgba(4, 10, 39, 0.15) 100%), linear-gradient(447deg, rgba(31, 0, 79, 0.5), rgba(0, 0, 0, 0.7));
+			padding: 20px 0px;
+		}
+	
+		&__label {
+			font-size: 20px;
+			color: #ffffff;
+			letter-spacing: 1px;
+			display: block;
+			text-align: center;
+			padding-bottom: 5px;
+		}
+	
+		&__input {
+			background-color: rgb(231, 231, 231);
+			width: 400px;
+			text-align: center;
+			height: 40px;
+			border-bottom: 2px solid #ffffff;
+			border-radius: 10px;
+		}
+
+	}
+}

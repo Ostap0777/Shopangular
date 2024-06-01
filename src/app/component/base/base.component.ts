@@ -36,6 +36,6 @@ openDialog():void {
 
 
  ngOnDestroy(): void {
-	this.breakpointSubscription.unsubscribe()
+
  }
 }

@@ -24,6 +24,8 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         this.closeMenu();
+		  this.closeMenu(); 
+        this.closeDishes();
       }
     });
   }
@@ -41,6 +43,10 @@ export class HeaderComponent implements OnInit {
     this.hotDisher = !this.hotDisher;
   }
 
+  closeDishes(): void {
+	this.coldDisher = false;
+	this.hotDisher = false;
+ }
 
 
   logout(): void {
@@ -58,6 +64,7 @@ export class HeaderComponent implements OnInit {
 
   iconClick(): void {
     this.isIconClick = !this.isIconClick;
+	 this.closeDishes();
   }
 }
 

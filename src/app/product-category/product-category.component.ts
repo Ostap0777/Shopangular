@@ -11,9 +11,12 @@ import { SortProductsService } from '../services/sort-products/sort-products.ser
   styleUrls: ['./product-category.component.scss']
 })
 export class ProductCategoryComponent implements OnInit, OnDestroy {
+
 	products: IProducts[];
-	category: string;
 	productsSubscription : Subscription;
+
+
+	category: string;
 	sortedProducts: any[] = [];
 	sortingType:string = 'default';
 	isListOpen:boolean = false;
@@ -31,11 +34,15 @@ ngOnInit(): void {
 	  this.products = data.filter((products:any) => products.category === this.category)
 	  this.sortProducts()
 	});
+
  };
 
- addToBasket(product:IProducts){
-	this.productService.postProductToBasket(product).subscribe((data) => console.log(data))
+ addProductToBasket(product:IProducts){
+	this.productService.postProductToBasket(product).subscribe((data) => 
+	this.products.push(data))
  }
+
+
 
 sortProducts() {
   this.sortedProducts= this.sortService.sortProducts(this.products, this.sortingType)
@@ -48,7 +55,7 @@ onSortingChange(sortingType:string) {
 }
 
  ngOnDestroy(): void {
-	if(this.productsSubscription)
-		this.productsSubscription.unsubscribe()
+	if(this.productsSubscription) this.productsSubscription.unsubscribe()
+
  }
 }

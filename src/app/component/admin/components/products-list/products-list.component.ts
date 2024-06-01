@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Observable, Subscribable, Subscription } from 'rxjs';
 import { IProducts } from 'src/app/models/products';
@@ -10,7 +10,7 @@ import { DialogComponentComponent } from '../dialog-component/dialog-component.c
   templateUrl: './products-list.component.html',
   styleUrls: ['./products-list.component.scss']
 })
-export class ProductsListComponent implements OnInit {
+export class ProductsListComponent implements OnInit, OnDestroy {
 	 products: IProducts[];
     productSubscription: Subscription;
 
@@ -21,6 +21,7 @@ export class ProductsListComponent implements OnInit {
  ngOnInit(): void {
      this.productSubscription = this.productService.getAllProducts().subscribe((data:any) => {
   this.products = data
+ 
    })
  }
 
@@ -43,6 +44,10 @@ export class ProductsListComponent implements OnInit {
  postData(data: IProducts) {
   console.log(data)
   this.productService.postProduct(data).subscribe((data) => this.products.push(data))
+ }
+
+ ngOnDestroy(): void {
+	if(this.productSubscription) this.productSubscription.unsubscribe()
  }
 
 }

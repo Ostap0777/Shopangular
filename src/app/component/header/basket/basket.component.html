@@ -4,21 +4,23 @@
 		<h1 class="basket__name">Ваша корзина</h1>
 	</div>
 		<div class="basket__items">
-			<div class="basket__item" *ngFor="let product of basket">
+			<div class="basket__item" *ngFor="let product of basketProduct">
 				<div class="basket-product__image">
 					<img src="{{product.image}}" alt="">
 				</div>
 			<div class="basket-product__info">
 			     <div class="basket-product__name">{{product.name}}</div>
-				  <div class="basket-product__weight">355 г</div>
+				  <div class="basket-product__weight">{{product.weight}} г</div>
 	      </div>
-			<div class="basket-product__price">344₴</div>
+			<div class="basket-product-info__two">
+			<div class="basket-product__price">{{product.price | currency:"₴"}}</div>
 			<div class="basket-product__counts">
 				<span class="count__minus"></span>
 			<div class="basket-product__count">1 шт</div>
 			   <span class="count__plus"></span>
 		</div>
-			<div class="basket-product__remove"></div>
+	</div>
+			<div class="basket-product__remove" (click)="removeProductToBasket(product)"></div>
 		</div>
 	</div>
 	<div class="basket__promokod">
@@ -32,7 +34,7 @@
 	</div>
 	<div class="buy__final buy">
 		<p class="buy-title">До сплати:</p>
-		<p class="buy__price">123345</p>
+		<p class="buy__price">{{totalPrice() |  currency:"₴"}}</p>
 	</div>
 		<div class="buy__button">Оформити зараз</div>
 </div>
