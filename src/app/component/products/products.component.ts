@@ -19,10 +19,15 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
       this.category = this.route.snapshot.data['category'];
       this.productsSubscription = this.productService.getProductsByCategory().subscribe((data: any) => {
-        this.products = data.filter((products:any) => products.category === this.category)
+        this.products = data.filter((products:any) => products.category === this.category);
       });
     };
 
+	 addProductToBasket(product:IProducts){
+		this.productService.postProductToBasket(product).subscribe((data) => 
+		this.products.push(data))
+	 }
+	 
   ngOnDestroy(): void {
     if (this.productsSubscription) {
       this.productsSubscription.unsubscribe();
