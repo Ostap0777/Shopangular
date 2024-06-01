@@ -1,0 +1,32 @@
+<h1 class="add-product__title">Додавання нового продукту</h1>
+<div class="add-product__info">
+	<form [formGroup]="myForm" (ngSubmit)="onSubmit()" action="">
+		<div class="mat-form-field">
+			<label class="add-product__label" for="">Назва продукту:</label>
+			<input class="add-product__input" formControlName="name" type="text" placeholder="Назва" name="" id="">
+		 </div>
+		 <div class="mat-form-field">
+			<label  class="add-product__label" for="">Опис:</label>
+			<input class="add-product__input" formControlName="opus" type="text" placeholder="Опис" name="" id="">
+		 </div>
+		 <div class="mat-form-field">
+			<label class="add-product__label" for="">Ціна:</label>
+			<input class="add-product__input" formControlName="price" type="text" placeholder="Ціна" name="" id="">
+		 </div>
+		 <div class="mat-form-field">
+			<label class="add-product__label" for="">Вага:</label>
+			<input class="add-product__input" formControlName="weight" type="text" placeholder="Вага" name="" id="">
+		 </div>
+		 <div class="mat-form-field">
+			<label class="add-product__label" for="">Категорія:</label>
+			<input class="add-product__input" formControlName="category" type="text" placeholder="Категорія" name="" id="">
+		 </div>
+		 <div class="mat-form-field">
+			<label class="add-product__label" for="">Зображення:</label>
+			<input class="add-product__input" formControlName="image" type="text" name="" id="">
+		 </div>
+		 <button class="button__add" type="submit">Добавити Товар</button>
+		 <button class="button__cancel" (click)="onNoClick()" type="button">Скасувати</button>
+	</form>
+</div>
+

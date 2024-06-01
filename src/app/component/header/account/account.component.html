@@ -1,5 +1,5 @@
 
-<div class="accout__container">
+<div class="account__container">
 	<div class="login__account">
 		<div class="login__container">
 			<h2 class="login__title">Ласкаво Просимо!</h2>
@@ -13,8 +13,9 @@
 				<label  for="password">Password:</label>
 				<input formControlName="password" class="form-user__input" placeholder="Password" type="password" id="userpassword">
           <p *ngIf="this.loginForm.get('password')?.invalid && this.loginForm.get('password')?.touched "><small class="text-danger">Password is required (min. length = 8)</small></p>
+			 <p class="password__new">Забули пароль?</p>
 			</div>
-			<button  [disabled]="loginForm.invalid" class="login__button" type="submit">Password</button>
+			<button [disabled]="loginForm.invalid" class="login__button" type="submit">Password</button>
 			</form>
 		</div>
 		<div class="login__info">

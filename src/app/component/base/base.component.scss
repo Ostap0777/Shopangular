@@ -47,6 +47,7 @@
 		font-weight: 500;
 		white-space: nowrap;
 		margin: 10px;
+		z-index: 5;
 	}
 	&__phone:hover {
 		text-decoration: underline;
@@ -118,20 +119,18 @@
 	}
 
 	&__price {
-		padding-bottom: 20px;
 		font-size: 23px;
 		color:#fff;
 		font-weight: 800;
-		top: -10%;
+		padding-top: 20px;
 	}
 }
 .product-price {
 
 	&__add {
-		align-items: center;
+		align-self: center;
 		margin-left: 20px;
-		display: flex;
-		gap: 20px;
+
 	}
 
 }
@@ -216,9 +215,9 @@
 	}
 
 	&__items {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-gap: 20px;
+	
+		
+		
 	
 	}
 
@@ -243,10 +242,12 @@
 }
 .menu-img {
 
-	&__one {
+	&__one img{
+		max-width: 100%;
 	}
 
-	&__two {
+	&__two img {
+		max-width: 100%;
 	}
 }
 .menu-item {
@@ -266,12 +267,116 @@
 .menu-text {
 
 	&__one {
-   font-size: 60px;
+   font-size: 40px;
 	margin-top: 20px;
 	}
 
 	&__two {
-		font-size: 60px;
+		font-size: 40px;
 		margin-bottom: 20px;
 	}
+}
+
+.swiper {
+
+	&__container {
+
+	}
+	&__slide {
+      display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	
+	}
+}
+
+
+@media(max-width: 730px) {
+	.main {
+		&__foto {
+			
+		}
+		&__title {
+			font-size: 38px;
+			letter-spacing: 2px;
+			line-height: 120%;
+			z-index: 5;
+		}
+		&__before {
+			display: none;
+		}
+		&__after {
+			display: none;
+		}
+		&-two__product {
+			display: none;
+		}
+		&__info {
+			margin: 0px 0px;
+			gap: 50px;
+		}
+		&-phone__email {
+			font-size: 30px;
+		}
+	}
+}
+
+@media(max-width:600px) {
+	.main {
+		&__foto  {
+			width: 100%;
+		}
+		&__title {
+			margin-top:150px;
+		}
+		&-phone__email {
+			margin: 0px 0px 0px 0px;
+		}
+		&__info {
+			gap: 50px;
+		}
+		&__email {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.icon {
+
+	&__help {
+		position: fixed;
+		bottom: 5%;
+		z-index: 5;
+		background-color:  rgba(183, 183, 183, 0.7);
+		padding: 5px 10px;
+		border-radius: 10px;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		right: 10px;
+	}
+}
+.help {
+
+	&__image img{
+		height: 50px;
+		width: 50px;
+	}
+
+	&__text {
+		font-size: 18px;
+		color: #ffffff;
+	}
+}
+
+
+.product-info__two img{
+	width: 100px;
+	height: 100px;
+
+}
+
+.product__info {
+	display: flex;
+	gap: 10px;
 }

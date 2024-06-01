@@ -98,3 +98,21 @@
 
 	}
 }
+
+@media(max-width:600px){
+
+.delivety {
+	&__title {
+		font-size: 32px;
+	}
+	&__content {
+		display: flex;
+		gap: 20px;
+	}
+	&__image {
+		display: 0 1 30%;
+	}
+	&__info {
+		display: 0 1 70%;
+	}
+}}
