@@ -6,7 +6,7 @@
 		<div class="basket__items">
 			<div class="basket__item" *ngFor="let product of product">
 				<div class="basket-product__image">
-					<img src="{{product.image}}" alt="">
+					<img loading="lazy" src="{{product.image}}" alt="">
 				</div>
 			<div class="basket-product__info">
 			     <div class="basket-product__name">{{product.name}}</div>

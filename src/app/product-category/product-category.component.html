@@ -18,7 +18,7 @@
 	<div class="products__container">
 		<div class="product__items">
 		<div class="product__item product" *ngFor="let product of sortedProducts">
-			<img class="product__image" src="{{product.image}}" alt="">
+			<img class="product__image" loading="lazy" src="{{product.image}}" alt="">
 			<a class="product__name">{{product.name}}</a>
 			<p class="product__weight">{{product.weight}} г</p>
 			<p class="product__opus">{{product.opus}}</p>
