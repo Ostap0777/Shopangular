@@ -4,7 +4,7 @@
 	  "id": 0,
 	  "name": "Хачапурі по Аджарське",
 	  "opus": "Хачапурі \"Човник\" з начинкою з розплавленого сиру сулугуні, яйця та олії.",
-		 "image":"../../../assets/img/menu/menu-product/Mask Group (1).svg",
+		 "image":"assets/img/menu/menu-product/Mask Group (1).svg",
 	  "price": 170,
 	  "weight": 430,
 	  "category": "popular"
@@ -13,7 +13,7 @@
 	  "id": 1,
 	  "name": "Хінкалі традиційні(6шт)",
 	  "opus": "Пряні хінкалі з начинкою з ароматом баранини зі спеціями",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (2).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (2).svg",
 	  "price": 180,
 	  "weight": 350,
 	  "category": "popular"
@@ -22,7 +22,7 @@
 	  "id": 2,
 	  "name": "Хінкалі жарені(6шт)",
 	  "opus": "Пряні хінкалі з начинкой з ароматом баранини зі спеціями.",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (3).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (3).svg",
 	  "price": 180,
 	  "weight": 350,
 	  "category": "popular"
@@ -31,7 +31,7 @@
 	  "id": 3,
 	  "name": "Ланч низькокалорійний",
 	  "opus": "Грецький йогурт з ягодами, 3 хінкалі традиційних, салат цезар, пиріжки з качкою, морс",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (4).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (4).svg",
 	  "price": 430,
 	  "weight": 450,
 	  "category": "popular"
@@ -40,7 +40,7 @@
 	  "id": 4,
 	  "name": "Хачапурі по-мегрельськи",
 	  "opus": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (5).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (5).svg",
 	  "price": 180,
 	  "weight": 350,
 	  "category": "popular"
@@ -49,7 +49,7 @@
 	  "id": 5,
 	  "name": "Котлета з картоплею по-сільському",
 	  "opus": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (6).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (6).svg",
 	  "price": 175,
 	  "weight": 350,
 	  "category": "popular"
@@ -58,7 +58,7 @@
 	  "id": 6,
 	  "name": "Хінкалі традиційні (6шт)",
 	  "opus": "Пряные хинкали с начинкой из ароматной баранины со специями.",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (7).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (7).svg",
 	  "price": 195,
 	  "weight": 350,
 	  "category": "popular"
@@ -67,7 +67,7 @@
 	  "id": 7,
 	  "name": "Хачапурі по-мегрельськи",
 	  "opus": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (8).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (8).svg",
 	  "price": 190,
 	  "weight": 430,
 	  "category": "popular"
@@ -76,7 +76,7 @@
 	  "id": 8,
 	  "name": "Хачапури по-аджарски",
 	  "opus": "Хачапури \"Лодочка\" с начинкой из расплавленного сыра сулугуни, яйца и масла.",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (9).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (9).svg",
 	  "price": 200,
 	  "weight": 430,
 	  "category": "popular"
@@ -85,7 +85,7 @@
 	  "id": 9,
 	  "name": "Котлета с картофелем по-деревенски",
 	  "opus": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (10).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (10).svg",
 	  "price": 215,
 	  "weight": 430,
 	  "category": "popular"
@@ -94,7 +94,7 @@
 	  "id": 10,
 	  "name": "Хінкалі жарені(6шт)",
 	  "opus": "Пряні хінкалі з начинкою з ароматної баранини зі спеціями.",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (11).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (11).svg",
 	  "price": 225,
 	  "weight": 350,
 	  "category": "popular"
@@ -103,7 +103,7 @@
 	  "id": 11,
 	  "name": "Ланч низькокалорійний",
 	  "opus": "Грецький йогурт з ягодами, 3 хінкалі традиційних, салат цезар, пиріжки з качкою, морс",
-	  "image":"../../../assets/img/menu/menu-product/Mask Group (12).svg",
+	  "image":"assets/img/menu/menu-product/Mask Group (12).svg",
 	  "price": 485,
 	  "weight": 450,
 	  "category": "popular"
@@ -112,7 +112,7 @@
 			"id": 12,
 			"name":"Котлета з картоплею по-сільському",
 			"opus":"За сімейним рецептом: найніжніше рубане м'ясо з екологічно чистими фермами.",
-			"image":"../../../assets/img/hotDish/Mask Group (13).svg",
+			"image":"assets/img/hotDish/Mask Group (13).svg",
 			"weight":350,
 			"price":210,
 			"category": "hot"
@@ -121,7 +121,7 @@
 			"id": 13,
 			"name":"Оджахурі з телятини",
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
-			"image":"../../../assets/img/hotDish/Mask Group (14).svg",
+			"image":"assets/img/hotDish/Mask Group (14).svg",
 			"weight":430,
 			"price":215,
 			"category": "hot"
@@ -130,7 +130,7 @@
 			"id": 14,
 			"name":"Долма",
 			"opus":"Неймовірно ароматна начинка з рубаного м'яса та свіжої зелені, загорнута у виноградне листя.",
-			"image":"../../../assets/img/hotDish/Mask Group (15).svg",
+			"image":"assets/img/hotDish/Mask Group (15).svg",
 			"weight":350,
 			"price":225,
 			"category": "hot"
@@ -139,7 +139,7 @@
 			"id": 15,
 			"name":"Чахохбілі",
 			"opus":"Неймовірно ароматна начинка з рубаного м'яса та свіжої зелені, загорнута у виноградне листя.",
-			"image":"../../../assets/img/hotDish/Mask Group (16).svg",
+			"image":"assets/img/hotDish/Mask Group (16).svg",
 			"weight":350,
 			"price":235,
 			"category": "hot"
@@ -148,7 +148,7 @@
 			"id": 16,
 			"name":"Лобіо по-імеретинськи",
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
-			"image":"../../../assets/img/hotDish/Mask Group (17).svg",
+			"image":"assets/img/hotDish/Mask Group (17).svg",
 			"weight":430,
 			"price":205,
 			"category": "hot"
@@ -157,7 +157,7 @@
 			"id": 17,
 			"name":"Стейк з лосося з овочами",
 			"opus":"Неймовірно ароматний коржик з сиром сулугуні всередині та зовні",
-			"image":"../../../assets/img/hotDish/Mask Group (18).svg",
+			"image":"assets/img/hotDish/Mask Group (18).svg",
 			"weight":430,
 			"price":640,
 			"category": "hot"
@@ -166,7 +166,7 @@
 		"id": 18,
 		"name": "Курячий суп з рисом та овочами",
 		"opus": "Курячий бульйон, наварений зі смачних курячих крилець або грудки.",
-		  "image":"../../../assets/img/soups/soup1.jpg",
+		  "image":"assets/img/soups/soup1.jpg",
 		"price": 240,
 		"weight": 230,
 		"category": "soups"
@@ -175,7 +175,7 @@
 		"id": 19,
 		"name": "Морквяний суп",
 		"opus": "Ніжний, ароматний і надзвичайно смачний варіант для теплої та здорової страви. ",
-		  "image":"../../../assets/img/soups/soup2.jpg",
+		  "image":"assets/img/soups/soup2.jpg",
 		"price": 200,
 		"weight": 210,
 		"category": "soups"
@@ -184,7 +184,7 @@
 		"id": 20,
 		"name": "Овочеве рагу",
 		"opus": "Класичне французьке овочеве рагу, що вражає яскравим смаком та ароматом свіжих овочів.",
-		  "image":"../../../assets/img/soups/soup3.jpg",
+		  "image":"assets/img/soups/soup3.jpg",
 		"price": 180,
 		"weight": 200,
 		"category": "soups"
@@ -193,7 +193,7 @@
 		"id": 21,
 		"name": "Овочений суп",
 		"opus": "Здорова і смачна страва, що вражає своєю простотою та насиченим смаком.",
-		  "image":"../../../assets/img/soups/soup4.jpg",
+		  "image":"assets/img/soups/soup4.jpg",
 		"price": 160,
 		"weight": 245,
 		"category": "soups"
@@ -202,7 +202,7 @@
 		"id": 22,
 		"name": "Капуста суп осінь",
 		"opus": "це смак відтінків осені в кожному ковтку. Готується зі свіжої капусти, моркви, картоплі та інших овочів.",
-		  "image":"../../../assets/img/soups/soup5.jpg",
+		  "image":"assets/img/soups/soup5.jpg",
 		"price": 170,
 		"weight": 215,
 		"category": "soups"
@@ -211,7 +211,7 @@
 		"id": 23,
 		"name": "Гарбузовий крем-суп з петрушкою",
 		"opus": " витончена та смаковита страва, яка поєднує в собі багатий смак гарбуза з ароматом свіжої петрушки. ",
-		  "image":"../../../assets/img/soups/soup6.jpg",
+		  "image":"assets/img/soups/soup6.jpg",
 		"price": 175,
 		"weight": 225,
 		"category": "soups"
@@ -220,7 +220,7 @@
 		"id": 24,
 		"name": "Український борщ",
 		"opus": " Ця страва вражає своєю яскравістю, ароматом та смаком.",
-		  "image":"../../../assets/img/soups/soup7.jpg",
+		  "image":"assets/img/soups/soup7.jpg",
 		"price": 220,
 		"weight": 255,
 		"category": "soups"
@@ -229,7 +229,7 @@
 		"id": 25,
 		"name": "Бульйон",
 		"opus": "Це ароматний, добре прокип'ячений відвар.",
-		  "image":"../../../assets/img/soups/soup8.jpg",
+		  "image":"assets/img/soups/soup8.jpg",
 		"price": 180,
 		"weight": 225,
 		"category": "soups"
@@ -238,7 +238,7 @@
 		"id": 26,
 		"name": "Гарбузовий суп зі свіжою петрушкою",
 		"opus": "Цей суп має ніжний, кремовий відтінок та багатий смак.",
-		  "image":"../../../assets/img/soups/soup9.jpg",
+		  "image":"assets/img/soups/soup9.jpg",
 		"price": 220,
 		"weight": 255,
 		"category": "soups"
@@ -247,7 +247,7 @@
 		"id": 27,
 		"name": "Томатний суп",
 		"opus": "Цей суп може бути поданий як гарячим, так і холодним.",
-		  "image":"../../../assets/img/soups/soup10.jpg",
+		  "image":"assets/img/soups/soup10.jpg",
 		"price": 195,
 		"weight": 235,
 		"category": "soups"
@@ -256,7 +256,7 @@
 	  "id": 28,
 	  "name": "Червоний сочевичний суп з лимонним",
 	  "opus": " Цей суп має виразний червоний колір та багатий аромат.",
-	  "image":"../../../assets/img/soups/soup11.jpg",
+	  "image":"assets/img/soups/soup11.jpg",
 	  "price": 160,
 	  "weight": 185,
 	  "category": "soups"
@@ -265,7 +265,7 @@
      "id":29,
      "name": "Домашній пивний сирний суп", 
      "opus": " Цей суп має кремову консистенцію та багатий смак.",
-     "image":"../../../assets/img/soups/soup12.jpg",
+     "image":"assets/img/soups/soup12.jpg",
      "price": 185,
      "weight": 225,		
      "category": "soups"
@@ -274,7 +274,7 @@
 		"id": 30,
 		"name": "Хінкалі жарені(6шт)",
 		"opus": "Пряні хінкалі з начинкой з ароматом баранини зі спеціями.",
-		"image":"../../../assets/img/menu/menu-product/Mask Group (3).svg",
+		"image":"assets/img/menu/menu-product/Mask Group (3).svg",
 		"price": 180,
 		"weight": 350,
 		"category": "khinkaliHachap"
@@ -283,7 +283,7 @@
 		"id": 31,
 		"name": "Хінкалі традиційні(6шт)",
 		"opus": "Пряні хінкалі з начинкою з ароматом баранини зі спеціями",
-		"image":"../../../assets/img/menu/menu-product/Mask Group (2).svg",
+		"image":"assets/img/menu/menu-product/Mask Group (2).svg",
 		"price": 180,
 		"weight": 350,
 		"category": "khinkaliHachap"
@@ -292,7 +292,7 @@
 		"id": 32,
 		"name": "Хачапурі по Аджарське",
 		"opus": "Хачапурі \"Човник\" з начинкою з розплавленого сиру сулугуні, яйця та олії.",
-		  "image":"../../../assets/img/menu/menu-product/Mask Group (1).svg",
+		  "image":"assets/img/menu/menu-product/Mask Group (1).svg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -301,7 +301,7 @@
 		"id": 33,
 		"name": "Глибокосмажений худий, хінкалі з м'ясом",
 		"opus": "Витончена та смачна страва, що відзначається своєю ароматною та смачною начинкою з ніжного м'яса.",
-		  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap2.jpg",
+		  "image":"assets/img/khinkali-hachap/khinkaliHachap2.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -310,7 +310,7 @@
 		"id": 34,
 		"name": "Смачний хінкалі з цилантро на тарілці на білому тлі",
 		"opus": "Вишукана та апетитна страва, яка вражає своєю ароматною та смачною начинкою з ніжного м'яса.",
-		  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap3.jpg",
+		  "image":"assets/img/khinkali-hachap/khinkaliHachap3.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -319,7 +319,7 @@
 		"id": 35,
 		"name": "Хінкалі з м'яса і спеціями з гострим вершковим соусом",
 		"opus": "Ніжне тісто, випічене до золотистості, обгорнуте смачною начинкою з ароматним м'ясом і вишуканими спеціями.",
-		  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap4.jpg",
+		  "image":"assets/img/khinkali-hachap/khinkaliHachap4.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -328,7 +328,7 @@
 		"id": 36,
 		"name": "Хінкалі з м'яса",
 		"opus": " витончена грузинська страва, що складається з тонкого шматочка тіста, яке містить смачну начинку зі смаженого м'яса",
-		  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap5.jpg",
+		  "image":"assets/img/khinkali-hachap/khinkaliHachap5.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -337,7 +337,7 @@
 		"id": 37,
 		"name": "Хінкалі з сиром",
 		"opus": "Він має аналогічну начинку, як і класичний хінкаль, але замість м'яса використовується сир.",
-		  "image":"../../../assets/img/khinkali-hachap/khinkaliHachap6.jpg",
+		  "image":"assets/img/khinkali-hachap/khinkaliHachap6.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "khinkaliHachap"
@@ -346,7 +346,7 @@
 		"id": 38,
 		"name": "Ньоккі з помідорами, шпинатом і пармезаном",
 		"opus": "Елегантна і смачна італійська страва, яка вражає своєю простотою та смаковим багатством.",
-		  "image":"../../../assets/img/cold-dish/coldDish1.jpg",
+		  "image":"assets/img/cold-dish/coldDish1.jpg",
 		"price": 220,
 		"weight": 330,
 		"category": "cold"
@@ -355,7 +355,7 @@
 		"id": 39,
 		"name": "Горілка із куском ароматного чорного хліба з беконом",
 		"opus": "Аромат бекону і хліба заповнює кухню, створюючи затишну атмосферу.",
-		  "image":"../../../assets/img/cold-dish/coldDish2.jpg",
+		  "image":"assets/img/cold-dish/coldDish2.jpg",
 		"price": 215,
 		"weight": 150,
 		"category": "cold"
@@ -364,7 +364,7 @@
 		"id": 40,
 		"name": "Ветчина, холодна варена свинина, салямі, бастурма",
 		"opus": "Ветчина, прожарена до золотисто-рудого відтінку, має ніжний та ароматний смак.",
-		  "image":"../../../assets/img/cold-dish/coldDish3.jpg",
+		  "image":"assets/img/cold-dish/coldDish3.jpg",
 		"price": 305,
 		"weight": 340,
 		"category": "cold"
@@ -373,7 +373,7 @@
 		"id": 41,
 		"name": "Мезе",
 		"opus": "Апетитні закуски, які походять з кухні Середземномор'я, особливо популярні в грецькій.",
-		  "image":"../../../assets/img/cold-dish/coldDish4.jpg",
+		  "image":"assets/img/cold-dish/coldDish4.jpg",
 		"price": 275,
 		"weight": 270,
 		"category": "cold"
@@ -382,7 +382,7 @@
 		"id": 42,
 		"name": "Нарізане печене м'ясо та колбаса з соусом",
 		"opus": "Печене м'ясо, тонко нарізане на шматочки, має хрустку золотисту скоринку та ніжний внутрішній шар.",
-		  "image":"../../../assets/img/cold-dish/coldDish5.jpg",
+		  "image":"assets/img/cold-dish/coldDish5.jpg",
 		"price": 285,
 		"weight": 250,
 		"category": "cold"
@@ -391,7 +391,7 @@
 		"id": 43,
 		"name": "В'єтнамська вермішель",
 		"opus": "Легка та освіжаюча страва, яка вражає своєю ароматною і смаковою гармонією.",
-		  "image":"../../../assets/img/cold-dish/coldDish6.jpg",
+		  "image":"assets/img/cold-dish/coldDish6.jpg",
 		"price": 255,
 		"weight": 190,
 		"category": "cold"
@@ -400,7 +400,7 @@
 		"id": 44,
 		"name": "Різноманітні види м'яса",
 		"opus": "Це м'ясо, яке має виразний смак та багатий аромат. Воно часто використовується в готуванні стейків.",
-		  "image":"../../../assets/img/cold-dish/coldDish7.jpg",
+		  "image":"assets/img/cold-dish/coldDish7.jpg",
 		"price": 275,
 		"weight": 240,
 		"category": "cold"
@@ -409,7 +409,7 @@
 		"id": 45,
 		"name": "Жарена свинина",
 		"opus": "Аромат жареної свинини розповсюджується по всьому приміщенню, залучаючи своїм привабливим запахом",
-		  "image":"../../../assets/img/cold-dish/coldDish8.jpg",
+		  "image":"assets/img/cold-dish/coldDish8.jpg",
 		"price": 295,
 		"weight": 320,
 		"category": "cold"
@@ -418,7 +418,7 @@
 		"id": 46,
 		"name": "Жарена свиная шея зі спеціями ",
 		"opus": "Смаковита та апетитна страва, яка об'єднує в собі ніжний смак свинячого м'яса з ароматом та пряністю спецій. ",
-		  "image":"../../../assets/img/cold-dish/coldDish9.jpg",
+		  "image":"assets/img/cold-dish/coldDish9.jpg",
 		"price": 255,
 		"weight": 320,
 		"category": "cold"
@@ -427,7 +427,7 @@
 		"id": 47,
 		"name": "Нарізана фарширована риба на тарелц",
 		"opus": "вишукана страва, що вражає своєю естетикою та смаковими якостями. ",
-		  "image":"../../../assets/img/cold-dish/coldDish10.jpg",
+		  "image":"assets/img/cold-dish/coldDish10.jpg",
 		"price": 235,
 		"weight": 290,
 		"category": "cold"
@@ -436,7 +436,7 @@
 		"id": 48,
 		"name": "Класичний французький салат нісуаз",
 		"opus": "Смачний та освіжаючий салат з помідорів, огірків, каламатських оливок, сиру фета та свіжої м'яти.",
-		  "image":"../../../assets/img/salads/salads7.jpg",
+		  "image":"assets/img/salads/salads7.jpg",
 		"price": 250,
 		"weight": 320,
 		"category": "salads"
@@ -445,7 +445,7 @@
 		"id": 49,
 		"name": "Табуле",
 		"opus": "Хачапурі \"Човник\" з начинкою з розплавленого сиру сулугуні, яйця та олії.",
-		  "image":"../../../assets/img/salads/salads11.jpg",
+		  "image":"assets/img/salads/salads11.jpg",
 		"price": 120,
 		"weight": 250,
 		"category": "salads"
@@ -454,7 +454,7 @@
 		"id": 50,
 		"name": "Салат з хамоном та полуницею",
 		"opus": "Простий і елегантний італійський салат, заснований на свіжих томатах, моцарелі та листях базиліку.",
-		  "image":"../../../assets/img/salads/salads13.jpg",
+		  "image":"assets/img/salads/salads13.jpg",
 		"price": 130,
 		"weight": 280,
 		"category": "salads"
@@ -463,7 +463,7 @@
 		"id": 51,
 		"name": "Франкфуртський зелений салат з яйцями",
 		"opus": " Розкішний французький салат із тонкими шматочками тунця, картоплі, яєць, оливок, зеленого горошку та огірків.",
-		  "image":"../../../assets/img/salads/salads5.jpg",
+		  "image":"assets/img/salads/salads5.jpg",
 		"price": 150,
 		"weight": 220,
 		"category": "salads"
@@ -472,7 +472,7 @@
 		"id": 52,
 		"name": "Барвистий мексиканський салат",
 		"opus": "Делікатний салат італійського походження із тонко нарізаною яловичиною, пармезаном, руколою та каперсами.",
-		  "image":"../../../assets/img/salads/salads9.jpg",
+		  "image":"assets/img/salads/salads9.jpg",
 		"price": 175,
 		"weight": 350,
 		"category": "salads"
@@ -481,7 +481,7 @@
 		"id": 53,
 		"name": "Літній салат з манго",
 		"opus": "Яскравий літній салат, що має чудову комбінацію інгредієнтів, — це найкращий вибір для літнього обіду або вечері.",
-		  "image":"../../../assets/img/salads/salads10.jpg",
+		  "image":"assets/img/salads/salads10.jpg",
 		"price": 185,
 		"weight": 380,
 		"category": "salads"
@@ -490,7 +490,7 @@
 		"id": 54,
 		"name": "Легкий салат з персиками-барбекю",
 		"opus": "Ох, ці соковиті духмяні персики на грилі, ніжна фета та ще й легкий свіжий присмак розмарину.",
-		  "image":"../../../assets/img/salads/salads6.jpg",
+		  "image":"assets/img/salads/salads6.jpg",
 		"price": 155,
 		"weight": 420,
 		"category": "salads"
@@ -499,7 +499,7 @@
 		"id": 55,
 		"name": "Салат з полуницею, бринзою та авокадо",
 		"opus": "НІжний та незвичайний салат з полуницею в поєднанні з у міру солоною бринзою та вершковістю авокадо вразить вас поєднанням смаків.",
-		  "image":"../../../assets/img/salads/salads14.jpg",
+		  "image":"assets/img/salads/salads14.jpg",
 		"price": 175,
 		"weight": 390,
 		"category": "salads"
@@ -508,7 +508,7 @@
 		"id": 56,
 		"name": "Салат з молодої капусти та кукурудзи",
 		"opus": "Цей салат з капусти та кукурудзи має дивовижну консистенцію та смак.",
-		  "image":"../../../assets/img/salads/salads12.jpg",
+		  "image":"assets/img/salads/salads12.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "salads"
@@ -517,7 +517,7 @@
 		"id": 57,
 		"name": "Салат з плавленим сиром і полуницею",
 		"opus": "Секрет цього салату у тому, що його легко готувати, а всі інгредієнти неймовірно легко поєднуються. ",
-		  "image":"../../../assets/img/salads/salads3.jpg",
+		  "image":"assets/img/salads/salads3.jpg",
 		"price": 170,
 		"weight": 430,
 		"category": "salads"
@@ -526,7 +526,7 @@
 		"id": 58,
 		"name": "Салат з чорницею, бринзою та горіхами",
 		"opus": "салат з чорницею і бринзою, що поєднує найкращі українські продукти у вишуканий вітамінний і поживний букет.",
-		  "image":"../../../assets/img/salads/salads2.jpg",
+		  "image":"assets/img/salads/salads2.jpg",
 		"price": 205,
 		"weight": 310,
 		"category": "salads"
@@ -535,7 +535,7 @@
 		"id": 59,
 		"name": "Салат з персиками, ягодами та медом",
 		"opus": " фруктового салату з персиків, злегка приправлений медом, соком лайма та свіжим листям базиліку, ідеально підходить для барбекю та вечірок!",
-		  "image":"../../../assets/img/salads/salads4.jpg",
+		  "image":"assets/img/salads/salads4.jpg",
 		"price": 275,
 		"weight": 280,
 		"category": "salads"
@@ -544,7 +544,7 @@
 		"id": 60,
 		"name": "Картопляний салат зі щавлем",
 		"opus": "Картопляний салат зі щавлем — один із найпопулярніших гарнірів.",
-		  "image":"../../../assets/img/salads/salads8.jpg",
+		  "image":"assets/img/salads/salads8.jpg",
 		"price": 325,
 		"weight": 330,
 		"category": "salads"
@@ -553,7 +553,7 @@
 		"id": 61,
 		"name": "«Зелений» салат з курятиною",
 		"opus": "Курячий салат з огірками, шпинатом і руколою — це смачна й ситна страва, яка готується швидко й легко.",
-		  "image":"../../../assets/img/salads/salads1.jpg",
+		  "image":"assets/img/salads/salads1.jpg",
 		"price": 320,
 		"weight": 280,
 		"category": "salads"
@@ -562,7 +562,7 @@
 		"id": 62,
 		"name": "Сирна тарілка з горіхами і медом",
 		"opus": "Це вишукана страва, що поєднує в собі ніжний смак сирів з ароматом меду та хрусткістю орехів.",
-		  "image":"../../../assets/img/snack/snack1.jpg",
+		  "image":"assets/img/snack/snack1.jpg",
 		"price": 270,
 		"weight": 315,
 		"category": "snack"
@@ -571,7 +571,7 @@
 		"id": 63,
 		"name": "Сирні тарілки з виноградом, джемом і орехами ",
 		"opus": "Елегантна страва, яка поєднує в собі ніжний смак сирів зі солодкістю винограду і джему.",
-		  "image":"../../../assets/img/snack/snack2.jpg",
+		  "image":"assets/img/snack/snack2.jpg",
 		"price": 240,
 		"weight": 255,
 		"category": "snack"
@@ -580,7 +580,7 @@
 		"id": 64,
 		"name": "Різноманітні закуски для красного вин",
 		"opus": "Витончені страви, що підкреслюють аромат та смак вина, створюючи неповторний смаковий досвід.",
-		  "image":"../../../assets/img/snack/snack3.jpg",
+		  "image":"assets/img/snack/snack3.jpg",
 		"price": 170,
 		"weight": 235,
 		"category": "snack"
@@ -589,7 +589,7 @@
 		"id": 65,
 		"name": "Булочки з сиром і овочами",
 		"opus": "Тонкі булочки, які приготовані з найсмачнішого тіста, начинені сиром та різноманітними овочами.",
-		  "image":"../../../assets/img/snack/snack4.jpg",
+		  "image":"assets/img/snack/snack4.jpg",
 		"price": 200,
 		"weight": 205,
 		"category": "snack"
@@ -598,7 +598,7 @@
 		"id": 66,
 		"name": "Хрустящі картофельні чіпси",
 		"opus": " Ці чіпси золотистого кольору та хрусткої консистенції виготовлені зі свіжого картофеля та досмажені до ідеальної хрусткості.",
-		  "image":"../../../assets/img/snack/snack5.jpg",
+		  "image":"assets/img/snack/snack5.jpg",
 		"price": 190,
 		"weight": 205,
 		"category": "snack"
@@ -607,7 +607,7 @@
 		"id": 67,
 		"name": "Курячі нагетси, картопля фрі і огірки",
 		"opus": "Курячі нагетси, обсмажені до золотистої хрусткої скоринки, мають ніжний смак та соковиту структуру.",
-		  "image":"../../../assets/img/snack/snack6.jpg",
+		  "image":"assets/img/snack/snack6.jpg",
 		"price": 340,
 		"weight": 215,
 		"category": "snack"
@@ -616,7 +616,7 @@
 		"id": 68,
 		"name": "Фісташкові горішки з яблуком і сиром",
 		"opus": "вишукана закуска, яка поєднує в собі багатий смак фісташок зі свіжістю яблука та ніжністю сиру.",
-		  "image":"../../../assets/img/snack/snack7.jpg",
+		  "image":"assets/img/snack/snack7.jpg",
 		"price": 230,
 		"weight": 225,
 		"category": "snack"
@@ -625,7 +625,7 @@
 		"id": 69,
 		"name": "Оливки, моцарелла і маринований перець чилі на білому",
 		"opus": "Кожна оливка пропонує насолоду своїм індивідуальним смаком та текстурою, доповнюючи ніжний смак моцарели.",
-		  "image":"../../../assets/img/snack/snack8.jpg",
+		  "image":"assets/img/snack/snack8.jpg",
 		"price": 240,
 		"weight": 205,
 		"category": "snack"
@@ -634,7 +634,7 @@
 	  "id": 70,
 	  "name": "Датська тісто",
 	  "opus": "Найкраще еклери смакують з гарячими напоями, але це вже питання вподобань. ",
-		 "image":"../../../assets/img/bakedGoods/baked-goods1.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods1.jpg",
 	  "price": 55,
 	  "weight": 150,
 	  "category": "bakedGoods"
@@ -643,7 +643,7 @@
 	  "id": 71,
 	  "name": "Круасан з печевом та пряником",
 	  "opus": "Ніжний та хрусткий, класичний французький круасан, приготований з масла.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods2.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods2.jpg",
 	  "price": 70,
 	  "weight": 230,	 
 	  "category": "bakedGoods"
@@ -652,7 +652,7 @@
 	  "id": 72,
 	  "name": "Десерт",
 	  "opus": "Різноманітні та смачні десерти, які роблять ваше життя солодким та барвистим.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods3.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods3.jpg",
 	  "price": 125,
 	  "weight": 250,
 	  "category": "bakedGoods"
@@ -661,7 +661,7 @@
 	  "id": 73,
 	  "name": "Гарбузові кекси",
 	  "opus": "Найкраще еклери смакують з гарячими напоями, але це вже питання вподобань.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods4.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods4.jpg",
 	  "price": 275,
 	  "weight": 230,
 	  "category": "bakedGoods"
@@ -670,7 +670,7 @@
 	  "id": 74,
 	  "name": "Свіжі булочки",
 	  "opus": "Легкі та пухкі булочки, що тануть у роті, надаючи вам незабутній смак та енергію на весь день.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods5.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods5.jpg",
 	  "price": 75,
 	  "weight": 110,
 	  "category": "bakedGoods"
@@ -679,7 +679,7 @@
 	  "id": 75,
 	  "name": "Круасан фруктовий",
 	  "opus": "Освіжаючі круасани зі смаком свіжих фруктів, які розкривають ваші смакові рецептори.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods6.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods6.jpg",
 	  "price": 85,
 	  "weight": 120,
 	  "category": "bakedGoods"
@@ -688,7 +688,7 @@
 	  "id": 76,
 	  "name": "Печення в пудрі",
 	  "opus": "Легкі та пухкі печення, що покриті ніжним цукровим порошком, які розпадаються на шматочки в роті.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods7.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods7.jpg",
 	  "price": 45,
 	  "weight": 130,
 	  "category": "bakedGoods"
@@ -697,7 +697,7 @@
 	  "id": 77,
 	  "name": "Круасан медовий",
 	  "opus": "Ароматні круасани, виконані за особливим рецептом з медового тіста.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods8.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods8.jpg",
 	  "price": 85,
 	  "weight": 160,
 	  "category": "bakedGoods"
@@ -706,7 +706,7 @@
 	  "id": 78,
 	  "name": "Фруктове печиво",
 	  "opus": "Смачне та корисне печиво з фруктовими добавками, яке додає свіжості та солодкого смаку вашому десерту або перекусу.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods9.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods9.jpg",
 	  "price": 45,
 	  "weight": 140,
 	  "category": "bakedGoods"
@@ -715,7 +715,7 @@
 	  "id": 79,
 	  "name": "Печеня",
 	  "opus": "Легкі та повітряні еклери, наповнені ніжним кремом та покриті ароматною глазур'ю.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods10.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods10.jpg",
 	  "price": 65,
 	  "weight": 165,
 	  "category": "bakedGoods"
@@ -724,7 +724,7 @@
 	  "id": 80,
 	  "name": "Тістечка",
 	  "opus": "Елегантні та ніжні тістечка з найкращими начинками та прикрасами.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods11.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods11.jpg",
 	  "price": 35,
 	  "weight": 80,	 
 	  "category": "bakedGoods"
@@ -733,7 +733,7 @@
 	  "id": 81,
 	  "name": "Круасани(3 види) та свіжа випічка",
 	  "opus": "Смачні круасани, наповнені ніжним шоколадним кремом, які розпускаються в роті, створюючи справжнє задоволення для солодкого зуба.",
-		 "image":"../../../assets/img/bakedGoods/baked-goods12.jpg",
+		 "image":"assets/img/bakedGoods/baked-goods12.jpg",
 	  "price": 165,
 	  "weight": 230,
 	  "category": "bakedGoods"
@@ -742,7 +742,7 @@
       "id": 82,
       "name": "Тірамісу",
       "opus": "Готують його на основі сиру маскарпоне та печива савоярді з кавовим просоченням, щедро посипаючи какао.",
-		  "image":"../../../assets/img/desserts/tiramisu.jpg",
+		  "image":"assets/img/desserts/tiramisu.jpg",
       "price": 240,
       "weight": 240,
 		"category": "desert"
@@ -751,7 +751,7 @@
       "id": 83,
       "name": "Крем-брюле",
       "opus": "Ось і крем-брюле із заварного крему, з запеченою карамельною скоринкою, мало кого залишить байдужим.",
-		  "image":"../../../assets/img/desserts/almond-cookies.jpg",
+		  "image":"assets/img/desserts/almond-cookies.jpg",
       "price": 225,
       "weight": 210,		
 		"category": "desert"
@@ -760,7 +760,7 @@
       "id": 84,
       "name": "Віденський струдель",
       "opus": "Подають цей десерт з морозивом та щедро посипають цукровою пудрою, можуть ще прикрасити м’ятою. ",
-		  "image":"../../../assets/img/desserts/strudel.jpg",
+		  "image":"assets/img/desserts/strudel.jpg",
       "price": 320,
       "weight": 250,
 		"category": "desert"
@@ -769,7 +769,7 @@
       "id": 85,
       "name": "Мигдальне печиво ",
       "opus": ". Мигдальне печиво набагато смачніше, а якщо ви будете запивати його молоком, то кращого сніданку не знайти.",
-		  "image":"../../../assets/img/desserts/almond-cookies.jpg",
+		  "image":"assets/img/desserts/almond-cookies.jpg",
       "price": 140,
       "weight": 240,
 		"category": "desert"
@@ -778,7 +778,7 @@
       "id": 86,
       "name": "Макаронс",
       "opus": ". Мало калорій, привабливий зовнішній вигляд, ніжний крем на будь-який смак та невагомість – усе це макаронс! .",
-		  "image":"../../../assets/img/desserts/macarons.jpg",
+		  "image":"assets/img/desserts/macarons.jpg",
       "price": 320,
       "weight": 320,
 		"category": "desert"
@@ -787,7 +787,7 @@
       "id": 87,
       "name": "Пахлава",
       "opus": "Сироп готують з меду, цукру, лимонного соку та апельсинової цедри. Прикрашають горіхами та фісташками.  ",
-		  "image":"../../../assets/img/desserts/baklava.jpg",
+		  "image":"assets/img/desserts/baklava.jpg",
       "price": 430,
       "weight": 200,
 		"category": "desert"
@@ -796,7 +796,7 @@
       "id": 88,
       "name": "Чурос",
       "opus": " Чурос – палички з м’якого тіста, на зрізі дуже схожі на зірку.",
-		  "image":"../../../assets/img/desserts/churros.jpg",
+		  "image":"assets/img/desserts/churros.jpg",
       "price": 220,
       "weight": 190,
 		"category": "desert"
@@ -805,7 +805,7 @@
       "id": 89,
       "name": "Брауні",
       "opus": "Оригінальні брауні містили волоські горіхи і абрикосову глазур.",
-		  "image":"../../../assets/img/desserts/brownie.jpg",
+		  "image":"assets/img/desserts/brownie.jpg",
       "price": 255,
       "weight": 360,
 		"category": "desert"
@@ -814,7 +814,7 @@
       "id": 90,
       "name": "Еклери",
       "opus": "Найкраще еклери смакують з гарячими напоями, але це вже питання вподобань. ",
-		  "image":"../../../assets/img/desserts/eclairs.jpg",
+		  "image":"assets/img/desserts/eclairs.jpg",
       "price": 275,
       "weight": 230,
 		"category": "desert"
@@ -823,7 +823,7 @@
       "id": 91,
       "name": "Тарт Баноффі ",
       "opus": "Англійці дуже полюбляють десерти з пісочного тіста.",
-		  "image":"../../../assets/img/desserts/tart-banoffi.jpg",
+		  "image":"assets/img/desserts/tart-banoffi.jpg",
       "price": 270,
       "weight": 340,
 		"category": "desert"
@@ -832,7 +832,7 @@
 			"id": 92,
 			"name":"Мохіто",
 			"opus":"Свіжий та освіжаючий кубинський коктейль, приготований з білого рому, свіжого м'яти, цукру, лайма і содової.",
-			"image":"../../../assets/img/drinks/koktel1.jpg",
+			"image":"assets/img/drinks/koktel1.jpg",
 			"weight":175,
 			"price":240,
 			"category": "drink"
@@ -841,7 +841,7 @@
 			"id": 93,
 			"name":"Маргарита",
 			"opus":"Легендарний мексиканський коктейль, що поєднує текілу, апельсиновий лікер та сік лайма.",
-			"image":"../../../assets/img/drinks/koktel2.jpg",
+			"image":"assets/img/drinks/koktel2.jpg",
 			"weight":200,
 			"price":230,
 			"category": "drink"
@@ -850,7 +850,7 @@
 			"id": 94,
 			"name":"Піна Колада",
 			"opus":" Екзотичний коктейль з кокосового крему, ананасового соку та білого рому, гарно прикрашений крихтами ананаса.",
-			"image":"../../../assets/img/drinks/koktel3.jpg",
+			"image":"assets/img/drinks/koktel3.jpg",
 			"weight":190,
 			"price":225,
 			"category": "drink"
@@ -859,7 +859,7 @@
 			"id": 95,
 			"name":"Мартіні",
 			"opus":"Класичний коктейль, що поєднує джин або водку з вермутом, часто подається з оливкою або лимонною цедрою.",
-			"image":"../../../assets/img/drinks/koktel4.jpg",
+			"image":"assets/img/drinks/koktel4.jpg",
 			"weight":220,
 			"price":235,
 			"category": "drink"
@@ -868,7 +868,7 @@
 			"id": 96,
 			"name":"Майтай",
 			"opus":"Сильний та ароматний коктейль з темного рому, лімонного соку, апельсинового лікеру, сиропу та м'яти.",
-			"image":"../../../assets/img/drinks/koktel5.jpg",
+			"image":"assets/img/drinks/koktel5.jpg",
 			"weight":205,
 			"price":210,
 			"category": "drink"
@@ -877,7 +877,7 @@
 			"id": 97,
 			"name":"Секс на пляжі",
 			"opus":"Легкий та фруктовий коктейль з водки, персикового лікеру, апельсинового та ананасового соків.",
-			"image":"../../../assets/img/drinks/koktel6.jpg",
+			"image":"assets/img/drinks/koktel6.jpg",
 			"weight":210,
 			"price":150,
 			"category": "drink"
@@ -886,7 +886,7 @@
 			"id": 98,
 			"name":"Манхеттен",
 			"opus":"Елегантний коктейль на основі рижового віскі з вермутом і ангостурою, часто гарнірований вишнею.",
-			"image":"../../../assets/img/drinks/koktel7.jpg",
+			"image":"assets/img/drinks/koktel7.jpg",
 			"weight":180,
 			"price":175,
 			"category": "drink"
@@ -895,7 +895,7 @@
 			"id": 99,
 			"name":"Справжня блакитна лагуна",
 			"opus":" Освіжаючий коктейль з водки, лікеру Кюраґао, лайма та содової, що нагадує своїм кольором екзотичне море.",
-			"image":"../../../assets/img/drinks/koktel8.jpg",
+			"image":"assets/img/drinks/koktel8.jpg",
 			"weight":150,
 			"price":195,		
 			"category": "drink"
@@ -904,7 +904,7 @@
 			"id": 100,
 			"name":"Текіла санрайз",
 			"opus":"Яскравий коктейль з текіли, апельсинового соку, грейпфрутового соку та сиропу, з градусником текіли.",
-			"image":"../../../assets/img/drinks/koktel9.jpg",
+			"image":"assets/img/drinks/koktel9.jpg",
 			"weight":205,
 			"price":260,
 			"category": "drink"
@@ -913,7 +913,7 @@
 			"id": 101,
 			"name":"Майтай Тай",
 			"opus":" Варіація класичного майтая зі спеціями, амаретто, лайма, гранатовим сиропом та згущеним молоком.",
-			"image":"../../../assets/img/drinks/koktel10.jpg",
+			"image":"assets/img/drinks/koktel10.jpg",
 			"weight":210,
 			"price":280,
 			"category": "drink"
@@ -922,7 +922,7 @@
 			"id": 102,
 			"name":"Спрайтсер",
 			"opus":"Легкий коктейль з водки, лимонного соку та газованого напою \"Спрайт\", що нагадує своїм смаком літній бриз.",
-			"image":"../../../assets/img/drinks/koktel11.jpg",
+			"image":"assets/img/drinks/koktel11.jpg",
 			"weight":200,
 			"price":140,
 			"category": "drink"
@@ -931,7 +931,7 @@
 			"id": 103,
 			"name":"Космополітен:",
 			"opus":"Стильний коктейль з водки, клюквового соку, апельсинового лікеру та лайма, який став символом моди та елегантності.",
-			"image":"../../../assets/img/drinks/koktel12.jpg",
+			"image":"assets/img/drinks/koktel12.jpg",
 			"weight":170,
 			"price":215,
 			"category": "drink"
