@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProductService } from '../../services/product.service';
-import { IProducts } from '../../models/products';
+import { Basket, IProducts } from '../../models/products';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit, OnDestroy {
-  products: IProducts[];
+  product: IProducts[];
+  products:Basket[]
   category: string;
   productsSubscription: Subscription;
 
@@ -19,11 +20,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
       this.category = this.route.snapshot.data['category'];
       this.productsSubscription = this.productService.getProductsByCategory().subscribe((data: any) => {
-        this.products = data.filter((products:any) => products.category === this.category);
+        this.products = data.filter((product:any) => product.category === this.category);
       });
     };
 
-	 addProductToBasket(product:IProducts){
+	 addProductToBasket(product:Basket){
 		this.productService.postProductToBasket(product).subscribe((data) => 
 		this.products.push(data))
 	 }

@@ -1,6 +1,7 @@
+import { keyframes } from '@angular/animations';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProducts } from 'src/app/models/products';
+import { Basket, IProducts } from 'src/app/models/products';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -10,20 +11,21 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class BasketComponent implements OnInit, OnDestroy{
 constructor(private productService: ProductService) {};
-product: IProducts[];
+product: Basket[];
 basketSubscription: Subscription;
 
 ngOnInit(): void {
 	this.basketSubscription = this.productService.getProductsFromBasket().subscribe((data: any) => {
-		 this.product = Object.keys(data).map(key => ({ id: key, ...data[key] }));
-		 console.log(data.product)
+		 this.product = data.dataArray = Object.keys(data).map(key =>({
+			idFireBase:key, ...data[key]
+		 }))
 		 this.totalPrice();
 	});
 }
 
-removeProductToBasket(product: IProducts) {
-	this.basketSubscription = this.productService.deleteProductsFromBasket(product.id).subscribe(() => {
-		let idx = this.product.findIndex((data) => data.id === product.id)
+removeProductToBasket(product: Basket) {
+	this.basketSubscription = this.productService.deleteProductsFromBasket(product.idFireBase).subscribe(() => {
+		let idx = this.product.findIndex((data) => data.idFireBase === product.idFireBase)
 		this.product.splice(idx,1)
 	})
  }
