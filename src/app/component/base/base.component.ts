@@ -12,28 +12,20 @@ import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dial
 })
 export class BaseComponent implements OnInit, OnDestroy{
 
-	slidesPerView:number = 3;
-   private breakpointSubscription: Subscription;
-constructor (private breakpointObserver:BreakpointObserver, private dialog: MatDialog) {}
-
-
-
+constructor ( private dialog: MatDialog) {}
 
 ngOnInit() {
 
 }
 
 openDialog():void {
-    let dialogConfig = new MatDialogConfig();
-	 dialogConfig.panelClass = 'custom-dialog-container';
-	 dialogConfig.width = '500px'
-	 dialogConfig.height = '400px'
-	 let dialogRef = this.dialog.open(DialogHelpComponent, dialogConfig);
-
+	let dialogConfig = new MatDialogConfig();
+	dialogConfig.panelClass = 'custom-dialog-container';
+	dialogConfig.width = '500px';
+	dialogConfig.height = '400px';
+	dialogConfig.disableClose = true;
+	let dialogRef = this.dialog.open(DialogHelpComponent, dialogConfig);
 }
-
-
-
 
  ngOnDestroy(): void {
 

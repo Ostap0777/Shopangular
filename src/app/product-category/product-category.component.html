@@ -1,10 +1,10 @@
-<div class="dish__container">
+<div class="dish__container" >
 	<h1 class="dish__title">Список продуктів</h1>
 	<div class="dish__sort sort">
 		<div class="sort__menu">
 		<div class="sort__title">Сотрувати:</div>
 			<span class="sort__icon"  [class.rotate]="isListOpen" (click)="toggleList()">
-				<img src="../../../assets/img/icon/Vector (4).svg" alt="">
+				<img src="assets/img/icon/Vector (4).svg" alt="">
 			</span>
 		</div>
 		<nav class="sort__list">
@@ -24,7 +24,7 @@
 			<p class="product__opus">{{product.opus}}</p>
 			<div class="product__additional">
 				<p class="product__price">{{product.price | currency:"₴"}}</p>
-				<a class="product-add__basket" (click)="addProductToBasket(product)" type="button"><img src="../../../assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
+				<a class="product-add__basket" (click)="addProductToBasket(product)" type="button"><img src="assets/img/menu/menu-product/Vector (5).svg" alt=""></a>
 			 </div>
 		</div>
 	</div>
@@ -43,65 +43,65 @@
 		<swiper-slide class="swiper__item" routerLink="/hotDish">
 			<div class="menu__item">
 				 <div class="menu-img__one">
-					  <img src="../../../assets/img/menu/меню-гарачі блюда/image 18.svg" alt="">
+					  <img src="assets/img/menu/меню-гарачі блюда/image 18.svg" alt="">
 				 </div>
 				 <div class="menu-item__text">
 					  <p>Гарячі страви</p>
 				 </div>
 				 <div class="menu-img__two">
-					  <img src="../../../assets/img/menu/меню-гарачі блюда/image 17.svg" alt="">
+					  <img src="assets/img/menu/меню-гарачі блюда/image 17.svg" alt="">
 				 </div>
 			 </div>
 	  </swiper-slide>
 		<swiper-slide class="swiper__item" routerLink="/soups">
 			<div class="menu__item">
 				<div class="menu-img__one">
-					<img src="../../../assets/img/menu/меню-супи/image 20.svg" alt="">
+					<img src="assets/img/menu/меню-супи/image 20.svg" alt="">
 				</div>
 				<div class="menu-item__text">
 					<p>Супи</p>
 				</div>
 				<div  class="menu-img__two">
-					<img src="../../../assets/img/menu/меню-супи/image 19.svg" alt="">
+					<img src="assets/img/menu/меню-супи/image 19.svg" alt="">
 				</div>
 			</div>
 		</swiper-slide >
 		<swiper-slide  class="swiper__items" routerLink="/khinkali">
 			<div class="menu__item">
 				<div class="menu-img__one">
-					<img src="../../../assets/img/menu/меню-хінкалі/image 21.svg" alt="">
+					<img src="assets/img/menu/меню-хінкалі/image 21.svg" alt="">
 				</div>
 				<div class="menu-item__text">
 					<p>Хінкалі</p>
 				</div>
 				<div  class="menu-img__two">
-					<img src="../../../assets/img/menu/меню-хінкалі/image 22.svg" alt="">
+					<img src="assets/img/menu/меню-хінкалі/image 22.svg" alt="">
 				</div>
 			</div>
 		</swiper-slide>
 		<swiper-slide class="swiper__item" routerLink="/coldDish">
 			<div class="menu__item">
 				<div class="menu-img__one">
-					<img src="../../../assets/img/menu/меню-холодні закуски/image 26.svg" alt="">
+					<img src="assets/img/menu/меню-холодні закуски/image 26.svg" alt="">
 				</div>
 				<div class="menu-item__text">
 					<p>Холодні закуски</p>
 				</div>
 				<div  class="menu-img__two">
-					<img src="../../../assets/img/menu/меню-холодні закуски/image 25.svg" alt="">
+					<img src="assets/img/menu/меню-холодні закуски/image 25.svg" alt="">
 				</div>
 			</div>
 		</swiper-slide>
 		<swiper-slide class="swiper__item" routerLink="/salads">
 			<div class="menu__item">
 				<div class="menu-img__one">
-					<img src="../../../assets/img/menu/меню-салати/image 23.svg" alt="">
+					<img src="assets/img/menu/меню-салати/image 23.svg" alt="">
 				</div>
 				<div class="menu-item__text">
 					<p>Салати</p>
 				</div>
 				<div  class="menu-img__two">
-					<img src="../../../assets/img/menu/меню-салати/image 24.svg" alt="">
+					<img src="assets/img/menu/меню-салати/image 24.svg" alt="">
 				</div>
 			</div>
 		</swiper-slide>
